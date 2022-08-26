@@ -49,14 +49,14 @@ header .wrapper .navigation .list-iteam {
 }
 header .wrapper .navigation .list-iteam .logo {
   width: 192px;
-  padding-right: 20px;
+  padding: 7px 0 0 20px;
 }
 header .wrapper .navigation .list-iteam .list {
   display: flex;
   padding-left: 56px;
 }
 header .wrapper .navigation .list-iteam .icn.active {
-  background-color: #81c14b;
+  background-color: rgba(129, 193, 75, 0.23);
   border-radius: 7px;
 }
 header .wrapper .navigation .list-iteam .icn a {
@@ -87,7 +87,7 @@ header .wrapper .navigation .right-icons .dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #81c14b;
+  background-color: #54c38b;
 }
 header .wrapper .navigation .right-icons .email-dot {
   position: absolute;
