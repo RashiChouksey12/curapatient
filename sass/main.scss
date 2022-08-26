@@ -1,0 +1,111 @@
+@import 'var';
+@import 'mixin';
+@import 'font';
+
+// variable
+// nesting
+// mixin
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+header {
+	box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.06);
+	.wrapper {
+		padding: 0 50px;
+
+		.navigation {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px 0;
+
+			.list-iteam {
+				display: flex;
+
+				.logo {
+					width: 192px;
+					padding-right: 20px;
+				}
+
+				.list {
+					display: flex;
+					padding-left: 56px;
+				}
+
+				.icn {
+					&.active {
+						background-color: $active-element-color;
+						border-radius: 7px;
+					}
+
+					a {
+						display: flex;
+						padding: 22px 31px;
+						font-family: $author;
+						font-size: 18px;
+						font-weight: normal;
+						font-stretch: normal;
+						font-style: normal;
+						letter-spacing: normal;
+						text-align: left;
+						color: $main-txt-color ;
+						text-decoration: none;
+
+						span {
+							padding: 0 8px;
+						}
+
+						img {
+							width: auto;
+							height: 16px;
+						}
+					}
+				}
+			}
+
+			.right-icons {
+				display: flex;
+				align-items: center;
+				.dot {
+					width: 8px;
+					height: 8px;
+					border-radius: 50%;
+					background-color: $active-element-color;
+				}
+
+				.email-dot {
+
+					position: absolute;
+					right: -2px;
+					top: -3px;
+				}
+
+				.alarm-dot {
+					position: absolute;
+					right: 0px;
+					top: 0px;
+				}
+				.email-icon,
+				.alarm-icon {
+					position: relative;
+					width: 25px;
+					margin: 0px 20px;
+				}
+
+				.img142-icon {
+					width: 55px;
+                    margin: 0px 20px;
+				}
+			}
+		}
+
+	}
+}
