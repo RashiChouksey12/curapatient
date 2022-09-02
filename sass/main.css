@@ -22,90 +22,321 @@
   font-weight: 600;
   font-style: normal;
 }
-* {
+#section-1 {
+  position: relative;
+  padding-bottom: 22px;
+}
+#section-1 .left-contet {
+  display: flex;
+}
+#section-1 .left-contet .family-img {
+  width: 250px;
+  padding: 18px 13px 0 0px;
+}
+#section-1 .left-contet .welcome-content h1 {
+  font-size: 52px;
+  font-weight: 600;
+  padding: 55px 0 0 0;
+}
+#section-1 .left-contet .welcome-content p {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-top: 10px;
+}
+#section-1 .right-content {
+  background: #e6f3ee;
+  position: absolute;
+  top: 61px;
+  right: 0;
+  border-radius: 10px;
+}
+#section-1 .right-content .inner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px 0px 20px;
+}
+#section-1 .right-content .inner-content .feature-img {
+  width: 30px;
+}
+#section-1 .right-content .inner-content .Vaccinations-content h2 {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 0 20px;
+  margin: 13px 0 10px 0;
+}
+#section-1 .right-content .inner-content .Vaccinations-content a {
+  font-weight: 500;
+  color: #7cb150;
+  padding-left: 22px;
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 13px;
+}
+#section-1 .right-content .inner-content .ellipse {
+  width: 36px inherit;
+  width: 36px;
+  height: 36px;
+  background: #7cb150;
+  border-radius: 50%;
+  position: relative;
+}
+#section-1 .right-content .inner-content .ellipse h3 {
+  position: absolute;
+  top: 0px;
+  font-size: 30px;
+  color: #fff;
+  right: 9px;
+  font-weight: bold;
+}
+
+.section-2 .content {
+  padding: 20px 20px 20px 21.2px;
+  border-radius: 14px;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
+}
+.section-2 .content h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.1px;
+  color: #101817;
+  padding-bottom: 13px;
+}
+.section-2 .content .bottom-content {
+  display: flex;
+  margin-top: 13px;
+  align-items: center;
+}
+.section-2 .content .bottom-content .District .District-cover {
+  display: flex;
+  background-color: #e6f3ee;
+  padding: 12px 17.4px 12px 13px;
+  border-radius: 5px;
+  align-items: center;
+}
+.section-2 .content .bottom-content .District .District-cover h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4c4c4c;
+  padding-bottom: 0;
+}
+.section-2 .content .bottom-content .District .District-cover .arrow {
+  box-sizing: border-box;
+  width: 13.2px;
+  height: 13.2px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 2.5px 2.5px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  margin-left: 32px;
+}
+.section-2 .content .bottom-content .District .para-1 {
+  padding-top: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.38;
+  color: #4c4c4c;
+}
+.section-2 .content .bottom-content .District .para-2 {
+  padding-top: 14px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #101817;
+}
+.section-2 .content .bottom-content .right-content {
+  display: flex;
+  width: 100%;
+}
+.section-2 .content .bottom-content .right-content .dropdown-container {
+  padding: 20px 17.3px 19px 23px;
+  border-radius: 14px;
+  border: solid 1px #eaeaea;
+  width: 25%;
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-2 .content .bottom-content .right-content .dropdown-container.Schools-Enrolled img {
+  width: 36px;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+}
+.section-2 .content .bottom-content .right-content .dropdown-container.events img {
+  width: 32.2px;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+}
+.section-2 .content .bottom-content .right-content .dropdown-container.events .down-arrow {
+  border-width: 2.5px 0px 0px 2.5px;
+}
+.section-2 .content .bottom-content .right-content .dropdown-container.Insurance-Rates img {
+  width: 36px;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+}
+.section-2 .content .bottom-content .right-content .dropdown-container.COVID-19-Positive img {
+  width: 36px;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+}
+.section-2 .content .bottom-content .right-content .dropdown-container .box-size {
+  width: 82px;
+  height: 82px;
+  border-radius: 7px;
+  position: relative;
+}
+.section-2 .content .bottom-content .right-content .dropdown-container .school-bg {
+  background-color: #29acc4;
+}
+.section-2 .content .bottom-content .right-content .dropdown-container .Insurance-bg {
+  background-color: #5bc784;
+}
+.section-2 .content .bottom-content .right-content .dropdown-container .COVID-bg {
+  background-color: #e672a3;
+}
+.section-2 .content .bottom-content .right-content .events {
+  background-color: #e6f3ee;
+}
+.section-2 .content .bottom-content .right-content .events .events-bg {
+  background-color: #8191e8;
+}
+
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: author;
+}
+
+h1,
+p,
+h3 {
+  margin: 0;
+}
+
+.arrow {
+  box-sizing: border-box;
+  width: 13.2px;
+  height: 13.2px;
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 2.5px 2.5px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  margin-left: 32px;
 }
 
 img {
   width: 100%;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  padding: 0 50px;
+  margin: 0 auto;
+  max-width: 2000px;
+}
+
+.logo {
+  width: 192px;
+}
+
 header {
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.06);
 }
-header .wrapper {
-  padding: 0 50px;
-}
-header .wrapper .navigation {
+header .navigation {
+  display: flex;
+  align-items: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
-header .wrapper .navigation .list-iteam {
+header .navigation .nav {
+  flex: 1;
+  margin-left: 56px;
+}
+header .navigation .nav ul {
   display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
-header .wrapper .navigation .list-iteam .logo {
-  width: 192px;
-  padding: 7px 0 0 20px;
+header .navigation .nav ul li {
+  padding: 0;
+  margin: 0 10px;
 }
-header .wrapper .navigation .list-iteam .list {
-  display: flex;
-  padding-left: 56px;
+header .navigation .nav ul li a {
+  font-size: 18px;
+  color: #000;
+  display: inline-flex;
+  padding: 17px 29px 17px 24px;
 }
-header .wrapper .navigation .list-iteam .icn.active {
+header .navigation .nav ul li a.active {
   background-color: rgba(129, 193, 75, 0.23);
   border-radius: 7px;
 }
-header .wrapper .navigation .list-iteam .icn a {
-  display: flex;
-  padding: 22px 31px;
-  font-family: author;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000;
-  text-decoration: none;
-}
-header .wrapper .navigation .list-iteam .icn a span {
-  padding: 0 8px;
-}
-header .wrapper .navigation .list-iteam .icn a img {
+header .navigation .nav ul li a img {
   width: auto;
   height: 16px;
+  padding: 0 8px 0px 0px;
 }
-header .wrapper .navigation .right-icons {
+header .account-section {
   display: flex;
   align-items: center;
 }
-header .wrapper .navigation .right-icons .dot {
+header .account-section .notification {
+  padding: 17px 19px;
+  background: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+header .account-section .notification img {
+  width: auto;
+  height: 19.6px;
+}
+header .account-section .notification.notify:after {
+  content: "";
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #54c38b;
-}
-header .wrapper .navigation .right-icons .email-dot {
   position: absolute;
-  right: -2px;
-  top: -3px;
+  top: 14px;
+  right: 16px;
 }
-header .wrapper .navigation .right-icons .alarm-dot {
-  position: absolute;
-  right: 0px;
-  top: 0px;
+header .account-section .notification.alert img {
+  height: 23px;
 }
-header .wrapper .navigation .right-icons .email-icon,
-header .wrapper .navigation .right-icons .alarm-icon {
-  position: relative;
-  width: 25px;
-  margin: 0px 20px;
+header .account-section .notification.alert.notify:after {
+  top: 18px;
+  right: 19px;
 }
-header .wrapper .navigation .right-icons .img142-icon {
-  width: 55px;
-  margin: 0px 20px;
+header .account-section .notification.profile {
+  padding: 0;
+  margin-left: 15px;
+}
+header .account-section .notification.profile img {
+  width: 52px;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
