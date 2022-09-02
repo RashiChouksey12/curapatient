@@ -20,13 +20,15 @@
 			align-items: center;
 
 			.District {
+				width: 25%;
+
 				.District-cover {
 					display: flex;
 					background-color: $notification-bg;
 					padding: 12px 17.4px 12px 13px;
 					border-radius: 5px;
 					align-items: center;
-
+				
 					h3 {
 						font-size: 20px;
 						font-weight: 500;
@@ -76,7 +78,7 @@
 					border-radius: 14px;
 					border: solid 1px $border-box;
 					width: 25%;
-					margin: 0 20px;
+					margin: 0 0 0 26px;
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
@@ -84,38 +86,62 @@
 						img{
                              width: 36px;
 							 position: absolute;
-							 left: 20px;
-							 bottom: 30px;
+                             left: 24px;
+                             bottom: 26px;
 						}
+                       
 					}
 					&.events {
 						img{
                             width: 32.2px;
 							 position: absolute;
-							 left: 20px;
-							 bottom: 30px;
+                             left: 25px;
+                             bottom: 25px;
 						}
 						.down-arrow{
 							
-							border-width: 2.5px 0px 0px 2.5px;						}
+							border-width: 2.5px 0px 0px 2.5px;						
+						}
 					}
 					&.Insurance-Rates {
 						img{
                              width: 36px;
 							 position: absolute;
-							 left: 20px;
-							 bottom: 30px;
+                             left: 25px;
+                             bottom: 25px;
 						}
 					}
 					&.COVID-19-Positive {
 						img{
                              width: 36px;
 							 position: absolute;
-							 left: 20px;
-							 bottom: 30px;
+                             left: 25px;
+                             bottom: 25px;
 						}
 					}
-
+                    .dropdown-container-content{
+                        flex: 1;
+                        margin-left: 14px;
+						h5{
+							font-size: 32px;
+							font-weight: 500;
+							margin-bottom: 14.5px;
+							&.dropdown-content-events{
+								margin: 12.4px 0 0px 0;
+							
+								
+							}
+							&.dropdown-content-Rates{
+								margin: 10px 0 6px 0;
+								font-weight: 600;
+							}
+						}
+						p{
+							font-size: 16px;
+							 color: #101817;
+							
+						}
+                    }
 					.box-size {
 						width: 82px;
 						height: 82px;
