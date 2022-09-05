@@ -1,0 +1,377 @@
+.enrollment {
+	.enrollment-content {
+		padding: 28px 32px;
+		border-radius: 10px;
+		border: solid 2px #e6e6e6;
+		background-color: #fff;
+
+
+		.top-head {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+
+			h3 {
+				font-size: 30px;
+				font-weight: 600;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				text-align: left;
+				color: #0e1817;
+			}
+
+			.enrollment-status {
+				display: flex;
+				align-items: center;
+
+				.enrollment-status-btns {
+					margin-right: 77px;
+					display: flex;
+
+
+					.status-btn {
+						padding: 20.5px 24px 18.5px 21px;
+						background-color: #fff;
+						border: solid 1px #e3e3e3;
+						font-weight: normal;
+						font-stretch: normal;
+						font-style: normal;
+						line-height: normal;
+						letter-spacing: normal;
+						text-align: left;
+						color: #4c4c4c;
+                        cursor: pointer;
+
+						&.active {
+							background-color: #7cb150;
+							color: #fff;
+						}
+
+						&:first-child {
+							border-radius: 10px 0 0px 10px;
+
+							font-weight: 500;
+
+
+						}
+
+						&:last-child {
+
+							border-radius: 0px 10px 10px 0px;
+						}
+					}
+				}
+
+				// table {
+				// 	width: 20% !important;
+				// 	margin-right: 77px;
+				// }
+
+				// table,
+				// th,
+				// td {
+
+				// 	background-color: #fff;
+				// 	border-collapse: collapse;
+				// 	padding: 20.5px 25px 18.5px 17px;
+				// 	font-size: 16px;
+				// 	font-weight: normal;
+				// 	font-stretch: normal;
+				// 	font-style: normal;
+				// 	line-height: normal;
+				// 	letter-spacing: normal;
+				// 	text-align: left;
+				// 	color: #000;
+
+				// 	th {
+				// 		border-top: solid 1px #e3e3e3;
+				// 		;
+				// 		border-bottom: solid 1px #e3e3e3;
+				// 		border-right: solid 1px #e3e3e3;
+
+
+
+				// 	}
+
+				// 	tr {
+				// 		display: flex;
+
+				// 		:first-child {
+
+				// 			background: $alert-icon;
+				// 			border-radius: 0;
+				// 			font-size: 16px;
+				// 			font-weight: 500;
+
+				// 			color: #fff;
+
+				// 			border-radius: 10px 0px 0px 10px;
+
+				// 		}
+
+				// 		:last-child {
+
+
+				// 			background-color: #fff;
+
+				// 			padding: 20.5px 25px 18.5px 17px;
+				// 			font-size: 16px;
+				// 			font-weight: normal;
+
+				// 			color: #000;
+
+				// 			border-radius: 0px 10px 10px 0px;
+
+				// 		}
+
+				// 	}
+
+
+				// }
+
+				form.example input[type=text] {
+
+					font-size: 17px;
+
+					float: left;
+					width: 500px;
+					background: #f1f1f1;
+					padding: 16px 15.4px 18px 17px;
+					border-radius: 5px 0px 0px 5px;
+					border: solid 1px #e2e2e2;
+					background-color: #fff;
+					padding: 16.5px 15.4px 16.5px 17px;
+				}
+
+				form.example button {
+					float: left;
+
+					padding: 10px;
+					background: $alert-icon;
+					color: white;
+					font-size: 17px;
+					border-left: none;
+					cursor: pointer;
+					padding: 17px 22px 19px 17px;
+					border-radius: 0px 5px 5px 0px;
+					border: none;
+					margin-right: 15px;
+                    cursor: pointer;
+
+
+				}
+
+
+
+				form.example::after {
+					content: "";
+					clear: both;
+					display: table;
+				}
+
+				.list-main {
+					display: flex;
+					margin-right: 14px;
+
+					.map {
+						padding: 17.5px 20px 16.5px;
+						border-radius: 5px 0px 0px 5px;
+						border: solid 1px #e2e2e2;
+						background-color: #fff;
+						padding: 15px 20px 15px 20px;
+                        cursor: pointer;
+
+						img {
+							width: 15.8px;
+
+						}
+					}
+
+					.list {
+						padding: 17.5px 20px 16.5px;
+						border-radius: 0px 5px 5px 0px;
+						background-color: #7cb150;
+						border: solid 1px #e2e2e2;
+						padding: 15px 20px 15px 20px;
+                        cursor: pointer;
+
+						img {
+							width: 20.7px;
+						}
+					}
+				}
+
+				.filter {
+					padding: 16.5px 15.5px 16.9px 15.5px;
+					border-radius: 5px;
+					border: solid 1px #e2e2e2;
+					background-color: #fff;
+					padding: 14px 15px 14px 15px;
+                    cursor: pointer;
+
+					img {
+						width: 24px;
+					}
+				}
+			}
+
+		}
+
+		.header-2 {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 37px 0;
+
+			h3 {
+				font-size: 22px;
+				font-weight: 500;
+				font-stretch: normal;
+				font-style: normal;
+				line-height: normal;
+				letter-spacing: normal;
+				text-align: left;
+				color: #0e1817;
+			}
+
+		}
+
+		.right-option-bar {
+			select {
+
+				padding: 16px 135.4px 18px 17px;
+				border-radius: 5px;
+				border: solid 1px #e2e2e2;
+				background-color: #fff;
+				margin-left: 16px;
+				font-size: 17px;
+				color: #4c4c4c;
+			}
+		}
+
+		.enrollment-tbl {
+			border-collapse: collapse;
+			width: 100%;
+
+
+
+			tr {
+				display: flex;
+				margin-bottom: 20px;
+				box-shadow: 0 20px 50px 0 rgb(150 163 190 / 7%);
+
+			}
+
+			th {
+
+				text-align: left;
+
+				color: #000;
+				border: none;
+				padding: 29px 5px 10.5px 5px;
+				border-radius: 10px;
+				background-color: #fff;
+
+				font-size: 20px;
+				font-weight: normal;
+
+				color: #4c4c4c;
+
+				&:first-child {
+
+					padding-left: 40px;
+				}
+			}
+
+			td {
+
+				font-size: 22px;
+
+				font-weight: 500;
+				color: #0e1817;
+				border-top: solid 2px #e6e6e6;
+				border-bottom: solid 2px #e6e6e6;
+				padding: 25px 5px;
+				align-items: center;
+				display: flex;
+
+
+				&:first-child {
+					border-left: solid 2px #e6e6e6;
+					border-radius: 10px 0 0 10px;
+					box-shadow: 0 20px 50px 0 rgba(150, 163, 190, 0.07);
+					padding-left: 40px;
+				}
+
+				&:last-child {
+					border-right: solid 2px #e6e6e6;
+					border-radius: 0 10px 10px 0;
+					box-shadow: 0 20px 50px 0 rgba(150, 163, 190, 0.07);
+				}
+
+				.completed-btn {
+					padding: 8px 22.9px 8px 23.1px;
+					border-radius: 16px;
+					background-color: $notification-bg;
+					border: none;
+					font-size: 16px;
+					font-weight: 500;
+
+					color: #28a03b;
+				}
+
+				.ongoing-btn {
+					padding: 8px 22.9px 8px 23.1px;
+					border-radius: 16px;
+					background-color: #f7f3e5;
+
+					border: none;
+					font-size: 16px;
+					font-weight: 500;
+
+					color: #efb023;
+				}
+
+				.edit-btn {
+					width: 32px;
+					height: 32px;
+					background-color: #e6f3ee;
+					border: none;
+					border-radius: 50px;
+					margin-left: 48px;
+                    cursor: pointer;
+
+
+					i {
+						&.fa {
+							color: #28a03b;
+							;
+						}
+					}
+				}
+
+			}
+
+			th,
+			td {
+				&.col-20 {
+					width: 20%;
+				}
+
+				&.col-10 {
+					width: 10%;
+				}
+
+				&.col-15 {
+					width: 15%;
+				}
+			}
+
+
+		}
+
+	}
+}

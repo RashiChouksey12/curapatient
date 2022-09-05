@@ -29,6 +29,7 @@
 					padding: 12px 17.4px 12px 13px;
 					border-radius: 5px;
 					align-items: center;
+					cursor: pointer;
 				
 					h3 {
 						font-size: 20px;
@@ -79,13 +80,31 @@
 					border-radius: 14px;
 					border: solid 1px $border-box;
 					width: 25%;
-					margin-right: 26px;
+					position: relative;
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
-					&:nth-last-child(1){
-						margin-right: 0px;
-						background-color: red;
+					&:not(:last-child){
+						margin-right: 26px;
+					}
+					&::after{
+							
+						content: '';
+						display: block;
+						box-sizing: border-box;
+						width: 13.2px;
+						height: 13.2px;
+						border-style: solid;
+						border-color: #4c4c4c;
+						border-width: 0px 2.5px 2.5px 0px;
+						transform: rotate(45deg);
+						transition: border-width 150ms ease-in-out;
+						position: absolute;
+						right: 20px;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+						cursor: pointer;
 					}
 					&.Schools-Enrolled {
 						img{
@@ -123,7 +142,9 @@
 					}
                     .dropdown-container-content{
                         flex: 1;
-                        margin-left: 14px;
+						margin: 0 14px 0 17.3px;
+						position: relative;
+
 						h5{
 							font-size: 32px;
 							font-weight: 500;
@@ -143,6 +164,7 @@
 							 color: $heading-txt-color;
 							
 						}
+						
                     }
 					.box-size {
 						width: 82px;
@@ -170,20 +192,20 @@
 				}
 				.events-bg {
 					background-color: $bg-color4;
-                 
-
+				}
+				.active {
+				
+					background-color: $notification-bg;
+					&::after{
+								
+						border-width: 2.5px 0px 0px 2.5px;						
+					}
 				}
 
 
 			}
 
-			.active {
-				background-color: $notification-bg;
-				.arrow{
-							
-					border-width: 2.5px 0px 0px 2.5px;						
-				}
-			}
+			
 		}
 	}
 

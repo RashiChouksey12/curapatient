@@ -61,6 +61,7 @@
 .banner-section .right-content .inner-content button.feature-img {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 .banner-section .right-content .inner-content button.feature-img.feature-img {
   width: 48px;
@@ -114,6 +115,7 @@
   padding: 12px 17.4px 12px 13px;
   border-radius: 5px;
   align-items: center;
+  cursor: pointer;
 }
 .organization .bottom-content .District .District-cover h3 {
   font-size: 20px;
@@ -157,14 +159,31 @@
   border-radius: 14px;
   border: solid 1px #eaeaea;
   width: 25%;
-  margin-right: 26px;
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.organization .bottom-content .right-content .dropdown-container:nth-last-child(1) {
-  margin-right: 0px;
-  background-color: red;
+.organization .bottom-content .right-content .dropdown-container:not(:last-child) {
+  margin-right: 26px;
+}
+.organization .bottom-content .right-content .dropdown-container::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 13.2px;
+  height: 13.2px;
+  border-style: solid;
+  border-color: #4c4c4c;
+  border-width: 0px 2.5px 2.5px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  cursor: pointer;
 }
 .organization .bottom-content .right-content .dropdown-container.Schools-Enrolled img {
   width: 36px;
@@ -192,7 +211,8 @@
 }
 .organization .bottom-content .right-content .dropdown-container .dropdown-container-content {
   flex: 1;
-  margin-left: 14px;
+  margin: 0 14px 0 17.3px;
+  position: relative;
 }
 .organization .bottom-content .right-content .dropdown-container .dropdown-container-content h5 {
   font-size: 32px;
@@ -228,11 +248,243 @@
 .organization .bottom-content .right-content .events-bg {
   background-color: #8191e8;
 }
-.organization .bottom-content .active {
+.organization .bottom-content .right-content .active {
   background-color: #e6f3ee;
 }
-.organization .bottom-content .active .arrow {
+.organization .bottom-content .right-content .active::after {
   border-width: 2.5px 0px 0px 2.5px;
+}
+
+.enrollment .enrollment-content {
+  padding: 28px 32px;
+  border-radius: 10px;
+  border: solid 2px #e6e6e6;
+  background-color: #fff;
+}
+.enrollment .enrollment-content .top-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.enrollment .enrollment-content .top-head h3 {
+  font-size: 30px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0e1817;
+}
+.enrollment .enrollment-content .top-head .enrollment-status {
+  display: flex;
+  align-items: center;
+}
+.enrollment .enrollment-content .top-head .enrollment-status .enrollment-status-btns {
+  margin-right: 77px;
+  display: flex;
+}
+.enrollment .enrollment-content .top-head .enrollment-status .enrollment-status-btns .status-btn {
+  padding: 20.5px 24px 18.5px 21px;
+  background-color: #fff;
+  border: solid 1px #e3e3e3;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4c4c4c;
+  cursor: pointer;
+}
+.enrollment .enrollment-content .top-head .enrollment-status .enrollment-status-btns .status-btn.active {
+  background-color: #7cb150;
+  color: #fff;
+}
+.enrollment .enrollment-content .top-head .enrollment-status .enrollment-status-btns .status-btn:first-child {
+  border-radius: 10px 0 0px 10px;
+  font-weight: 500;
+}
+.enrollment .enrollment-content .top-head .enrollment-status .enrollment-status-btns .status-btn:last-child {
+  border-radius: 0px 10px 10px 0px;
+}
+.enrollment .enrollment-content .top-head .enrollment-status form.example input[type=text] {
+  font-size: 17px;
+  float: left;
+  width: 500px;
+  background: #f1f1f1;
+  padding: 16px 15.4px 18px 17px;
+  border-radius: 5px 0px 0px 5px;
+  border: solid 1px #e2e2e2;
+  background-color: #fff;
+  padding: 16.5px 15.4px 16.5px 17px;
+}
+.enrollment .enrollment-content .top-head .enrollment-status form.example button {
+  float: left;
+  padding: 10px;
+  background: #7cb150;
+  color: white;
+  font-size: 17px;
+  border-left: none;
+  cursor: pointer;
+  padding: 17px 22px 19px 17px;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.enrollment .enrollment-content .top-head .enrollment-status form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.enrollment .enrollment-content .top-head .enrollment-status .list-main {
+  display: flex;
+  margin-right: 14px;
+}
+.enrollment .enrollment-content .top-head .enrollment-status .list-main .map {
+  padding: 17.5px 20px 16.5px;
+  border-radius: 5px 0px 0px 5px;
+  border: solid 1px #e2e2e2;
+  background-color: #fff;
+  padding: 15px 20px 15px 20px;
+  cursor: pointer;
+}
+.enrollment .enrollment-content .top-head .enrollment-status .list-main .map img {
+  width: 15.8px;
+}
+.enrollment .enrollment-content .top-head .enrollment-status .list-main .list {
+  padding: 17.5px 20px 16.5px;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #7cb150;
+  border: solid 1px #e2e2e2;
+  padding: 15px 20px 15px 20px;
+  cursor: pointer;
+}
+.enrollment .enrollment-content .top-head .enrollment-status .list-main .list img {
+  width: 20.7px;
+}
+.enrollment .enrollment-content .top-head .enrollment-status .filter {
+  padding: 16.5px 15.5px 16.9px 15.5px;
+  border-radius: 5px;
+  border: solid 1px #e2e2e2;
+  background-color: #fff;
+  padding: 14px 15px 14px 15px;
+  cursor: pointer;
+}
+.enrollment .enrollment-content .top-head .enrollment-status .filter img {
+  width: 24px;
+}
+.enrollment .enrollment-content .header-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 0;
+}
+.enrollment .enrollment-content .header-2 h3 {
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0e1817;
+}
+.enrollment .enrollment-content .right-option-bar select {
+  padding: 16px 135.4px 18px 17px;
+  border-radius: 5px;
+  border: solid 1px #e2e2e2;
+  background-color: #fff;
+  margin-left: 16px;
+  font-size: 17px;
+  color: #4c4c4c;
+}
+.enrollment .enrollment-content .enrollment-tbl {
+  border-collapse: collapse;
+  width: 100%;
+}
+.enrollment .enrollment-content .enrollment-tbl tr {
+  display: flex;
+  margin-bottom: 20px;
+  box-shadow: 0 20px 50px 0 rgba(150, 163, 190, 0.07);
+}
+.enrollment .enrollment-content .enrollment-tbl th {
+  text-align: left;
+  color: #000;
+  border: none;
+  padding: 29px 5px 10.5px 5px;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 20px;
+  font-weight: normal;
+  color: #4c4c4c;
+}
+.enrollment .enrollment-content .enrollment-tbl th:first-child {
+  padding-left: 40px;
+}
+.enrollment .enrollment-content .enrollment-tbl td {
+  font-size: 22px;
+  font-weight: 500;
+  color: #0e1817;
+  border-top: solid 2px #e6e6e6;
+  border-bottom: solid 2px #e6e6e6;
+  padding: 25px 5px;
+  align-items: center;
+  display: flex;
+}
+.enrollment .enrollment-content .enrollment-tbl td:first-child {
+  border-left: solid 2px #e6e6e6;
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 20px 50px 0 rgba(150, 163, 190, 0.07);
+  padding-left: 40px;
+}
+.enrollment .enrollment-content .enrollment-tbl td:last-child {
+  border-right: solid 2px #e6e6e6;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 0 20px 50px 0 rgba(150, 163, 190, 0.07);
+}
+.enrollment .enrollment-content .enrollment-tbl td .completed-btn {
+  padding: 8px 22.9px 8px 23.1px;
+  border-radius: 16px;
+  background-color: #e6f3ee;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #28a03b;
+}
+.enrollment .enrollment-content .enrollment-tbl td .ongoing-btn {
+  padding: 8px 22.9px 8px 23.1px;
+  border-radius: 16px;
+  background-color: #f7f3e5;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #efb023;
+}
+.enrollment .enrollment-content .enrollment-tbl td .edit-btn {
+  width: 32px;
+  height: 32px;
+  background-color: #e6f3ee;
+  border: none;
+  border-radius: 50px;
+  margin-left: 48px;
+  cursor: pointer;
+}
+.enrollment .enrollment-content .enrollment-tbl td .edit-btn i.fa {
+  color: #28a03b;
+}
+.enrollment .enrollment-content .enrollment-tbl th.col-20,
+.enrollment .enrollment-content .enrollment-tbl td.col-20 {
+  width: 20%;
+}
+.enrollment .enrollment-content .enrollment-tbl th.col-10,
+.enrollment .enrollment-content .enrollment-tbl td.col-10 {
+  width: 10%;
+}
+.enrollment .enrollment-content .enrollment-tbl th.col-15,
+.enrollment .enrollment-content .enrollment-tbl td.col-15 {
+  width: 15%;
 }
 
 * {
@@ -261,7 +513,6 @@ h5 {
   border-color: #4c4c4c;
   border-width: 0px 2.5px 2.5px 0px;
   transform: rotate(45deg);
-  transition: border-width 150ms ease-in-out;
   margin-left: 32px;
 }
 
@@ -367,141 +618,4 @@ header .account-section .notification.profile {
 header .account-section .notification.profile img {
   width: 52px;
   height: auto;
-}
-
-section.section-4 {
-  padding: 27px 32px 37px 19.3px;
-  border-radius: 10px;
-  border: solid 2px #e6e6e6;
-  background-color: #fff;
-}
-section.section-4 .top-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-section.section-4 .top-head h3 {
-  font-size: 30px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #0e1817;
-}
-section.section-4 .top-head table {
-  width: 20% !important;
-}
-section.section-4 .top-head table,
-section.section-4 .top-head th,
-section.section-4 .top-head td {
-  border: solid 1px #e3e3e3;
-  background-color: #fff;
-  border-collapse: collapse;
-  padding: 20.5px 25px 18.5px 17px;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #000;
-}
-section.section-4 .top-head table tr :nth-child(1),
-section.section-4 .top-head th tr :nth-child(1),
-section.section-4 .top-head td tr :nth-child(1) {
-  background: #7cb150;
-  border-radius: 0;
-  font-size: 16px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #fff;
-}
-section.section-4 .top-head form.example input[type=text] {
-  font-size: 17px;
-  float: left;
-  background: #f1f1f1;
-  padding: 16px 15.4px 18px 17px;
-  border-radius: 5px 0px 0px 5px;
-  border: solid 1px #e2e2e2;
-  background-color: #fff;
-}
-section.section-4 .top-head form.example button {
-  float: left;
-  padding: 10px;
-  background: #7cb150;
-  color: white;
-  font-size: 17px;
-  border-left: none;
-  cursor: pointer;
-  padding: 16px 15.4px 18px 17px;
-  border-radius: 0px 5px 5px 0px;
-  border: solid 2px #e6e6e6;
-}
-section.section-4 .top-head form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-section.section-4 .top-head .list-main {
-  display: flex;
-}
-section.section-4 .top-head .list-main .map {
-  padding: 17.5px 20px 16.5px;
-  border-radius: 5px;
-  border: solid 1px #e2e2e2;
-  background-color: #fff;
-}
-section.section-4 .top-head .list-main .map img {
-  width: 15.8px;
-}
-section.section-4 .top-head .list-main .list {
-  padding: 17.5px 20px 16.5px;
-  border-radius: 5px;
-  background-color: #7cb150;
-  border: solid 1px #e2e2e2;
-}
-section.section-4 .top-head .list-main .list img {
-  width: 20.7px;
-}
-section.section-4 .top-head .filter {
-  padding: 16.5px 15.5px 16.9px 15.5px;
-  border-radius: 5px;
-  border: solid 1px #e2e2e2;
-  background-color: #fff;
-}
-section.section-4 .top-head .filter img {
-  width: 24px;
-}
-section.section-4 .header-2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 37px 0;
-}
-section.section-4 .header-2 h3 {
-  font-size: 22px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #0e1817;
-}
-section.section-4 .right-option-bar select {
-  padding: 16px 15.4px 18px 17px;
-  border-radius: 5px;
-  border: solid 1px #e2e2e2;
-  background-color: #fff;
-  margin-left: 16px;
-  font-size: 20px;
-  color: #4c4c4c;
 }/*# sourceMappingURL=main.css.map */
