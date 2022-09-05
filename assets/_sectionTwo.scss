@@ -11,6 +11,7 @@
 
 			.District {
 				width: 25%;
+				margin-right: 26px;
 
 				h3 {
 					font-size: 20px;
@@ -78,10 +79,14 @@
 					border-radius: 14px;
 					border: solid 1px $border-box;
 					width: 25%;
-					margin: 0 0 0 26px;
+					margin-right: 26px;
 					display: flex;
 					justify-content: space-between;
 					align-items: center;
+					&:nth-last-child(1){
+						margin-right: 0px;
+						background-color: red;
+					}
 					&.Schools-Enrolled {
 						img{
                              width: 36px;
@@ -98,10 +103,7 @@
                              left: 25px;
                              bottom: 25px;
 						}
-						.down-arrow{
-							
-							border-width: 2.5px 0px 0px 2.5px;						
-						}
+						
 					}
 					&.Insurance-Rates {
 						img{
@@ -166,16 +168,20 @@
 					}
 
 				}
+				.events-bg {
+					background-color: $bg-color4;
+                 
 
-				.active {
-					background-color: $notification-bg;
-					
-
-					.events-bg {
-						background-color: $bg-color4;
+				}
 
 
-					}
+			}
+
+			.active {
+				background-color: $notification-bg;
+				.arrow{
+							
+					border-width: 2.5px 0px 0px 2.5px;						
 				}
 			}
 		}

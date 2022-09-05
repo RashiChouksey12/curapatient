@@ -98,6 +98,7 @@
 }
 .organization .bottom-content .District {
   width: 25%;
+  margin-right: 26px;
 }
 .organization .bottom-content .District h3 {
   font-size: 20px;
@@ -156,10 +157,14 @@
   border-radius: 14px;
   border: solid 1px #eaeaea;
   width: 25%;
-  margin: 0 0 0 26px;
+  margin-right: 26px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.organization .bottom-content .right-content .dropdown-container:nth-last-child(1) {
+  margin-right: 0px;
+  background-color: red;
 }
 .organization .bottom-content .right-content .dropdown-container.Schools-Enrolled img {
   width: 36px;
@@ -172,9 +177,6 @@
   position: absolute;
   left: 25px;
   bottom: 25px;
-}
-.organization .bottom-content .right-content .dropdown-container.events .down-arrow {
-  border-width: 2.5px 0px 0px 2.5px;
 }
 .organization .bottom-content .right-content .dropdown-container.Insurance-Rates img {
   width: 36px;
@@ -223,11 +225,14 @@
 .organization .bottom-content .right-content .dropdown-container .COVID-bg {
   background-color: #e672a3;
 }
-.organization .bottom-content .right-content .active {
+.organization .bottom-content .right-content .events-bg {
+  background-color: #8191e8;
+}
+.organization .bottom-content .active {
   background-color: #e6f3ee;
 }
-.organization .bottom-content .right-content .active .events-bg {
-  background-color: #8191e8;
+.organization .bottom-content .active .arrow {
+  border-width: 2.5px 0px 0px 2.5px;
 }
 
 * {
