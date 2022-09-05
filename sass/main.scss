@@ -4,10 +4,12 @@
 @import '../assets/sectionOne';
 @import '../assets/sectionTwo';
 
-
 // variable
 // nesting
 // mixin
+* {
+	box-sizing: border-box;
+}
 
 body {
 	margin: 0;
@@ -19,7 +21,8 @@ body {
 
 h1,
 p,
-h3,h5 {
+h3,
+h5 {
 	margin: 0;
 }
 
@@ -55,7 +58,6 @@ a {
 
 .logo {
 	width: 192px;
-
 }
 
 header {
@@ -88,7 +90,6 @@ header {
 						font-size: 18px;
 						color: $main-txt-color ;
 						display: inline-flex;
-						// padding: 13px 23px 13px 15px;
 						padding: 17px 29px 17px 24px;
 
 						&.active {
@@ -109,6 +110,7 @@ header {
 		}
 
 	}
+
 	.account-section {
 		display: flex;
 		align-items: center;
@@ -165,8 +167,178 @@ header {
 
 }
 
+section.section-4 {
+	padding: 27px 32px 37px 19.3px;
+	border-radius: 10px;
+	border: solid 2px #e6e6e6;
+	background-color: #fff;
+
+	.top-head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		h3 {
+			font-size: 30px;
+			font-weight: 600;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: left;
+			color: #0e1817;
+		}
+
+		table {
+			width: 20% !important;
+
+		}
+
+		table,
+		th,
+		td {
+			border: solid 1px #e3e3e3;
+			background-color: #fff;
+			border-collapse: collapse;
+			padding: 20.5px 25px 18.5px 17px;
+			border-radius: 10px;
+			font-size: 16px;
+			font-weight: normal;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: left;
+			color: #000;
+
+			tr {
+				:nth-child(1) {
+
+					background: $alert-icon;
+					border-radius: 0;
+					font-size: 16px;
+					font-weight: 500;
+					font-stretch: normal;
+					font-style: normal;
+					line-height: normal;
+					letter-spacing: normal;
+					text-align: left;
+					color: #fff;
+
+				}
+			}
+
+
+		}
+
+		form.example input[type=text] {
+
+			font-size: 17px;
+
+			float: left;
+
+			background: #f1f1f1;
+			padding: 16px 15.4px 18px 17px;
+			border-radius: 5px 0px 0px 5px;
+			border: solid 1px #e2e2e2;
+			background-color: #fff;
+		}
+
+		form.example button {
+			float: left;
+
+			padding: 10px;
+			background: $alert-icon;
+			color: white;
+			font-size: 17px;
+
+			border-left: none;
+			cursor: pointer;
+			padding: 16px 15.4px 18px 17px;
+			border-radius: 0px 5px 5px 0px;
+			border: solid 2px #e6e6e6;
+
+		}
 
 
 
+		form.example::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+
+		.list-main {
+			display: flex;
+
+			.map {
+				padding: 17.5px 20px 16.5px;
+				border-radius: 5px;
+				border: solid 1px #e2e2e2;
+				background-color: #fff;
+
+				img {
+					width: 15.8px;
+
+				}
+			}
+
+			.list {
+				padding: 17.5px 20px 16.5px;
+				border-radius: 5px;
+				background-color: #7cb150;
+				border: solid 1px #e2e2e2;
+
+				img {
+					width: 20.7px;
+				}
+			}
+		}
+
+		.filter {
+			padding: 16.5px 15.5px 16.9px 15.5px;
+			border-radius: 5px;
+			border: solid 1px #e2e2e2;
+			background-color: #fff;
+
+			img {
+				width: 24px;
+			}
+		}
 
 
+	}
+
+	.header-2 {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 37px 0;
+
+		h3 {
+			font-size: 22px;
+			font-weight: 500;
+			font-stretch: normal;
+			font-style: normal;
+			line-height: normal;
+			letter-spacing: normal;
+			text-align: left;
+			color: #0e1817;
+		}
+
+	}
+
+	.right-option-bar {
+		select {
+
+			padding: 16px 15.4px 18px 17px;
+			border-radius: 5px;
+			border: solid 1px #e2e2e2;
+			background-color: #fff;
+			margin-left: 16px;
+
+			font-size: 20px;
+			color: #4c4c4c;
+		}
+	}
+}

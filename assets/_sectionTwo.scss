@@ -1,27 +1,27 @@
-.section-2 {
-	.content {
-		padding: 20px 20px 20px 21.2px;
-		border-radius: 14px;
-		box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
-
-		h3 {
-			font-size: 20px;
-			font-weight: 500;
-			line-height: 1.4;
-			letter-spacing: 0.1px;
-			color: #101817;
-			padding-bottom: 13px;
-
-		}
+.organization{
+	
 
 		.bottom-content {
 			display: flex;
-			margin-top: 13px;
+			// margin-top: 13px;
 			align-items: center;
+			padding: 20px 20px 20px 21.2px;
+			border-radius: 14px;
+			box-shadow: 0 3px 20px 0 rgb(0 0 0 / 8%);
 
 			.District {
 				width: 25%;
 
+				h3 {
+					font-size: 20px;
+					font-weight: 500;
+					line-height: 1.4;
+					letter-spacing: 0.1px;
+					color: $heading-txt-color;
+					padding-bottom: 13px;
+		
+				}
+		
 				.District-cover {
 					display: flex;
 					background-color: $notification-bg;
@@ -34,7 +34,7 @@
 						font-weight: 500;
 						line-height: normal;
 						letter-spacing: normal;
-						color: #4c4c4c;
+						color: $heading2-txt-color;
 						padding-bottom: 0;
 					}
 
@@ -56,7 +56,7 @@
 					font-size: 16px;
 					font-weight: 500;
 					line-height: 1.38;
-					color: #4c4c4c;
+					color: $heading2-txt-color;
 				}
 
 				.para-2 {
@@ -64,7 +64,7 @@
 					font-size: 16px;
 					font-weight: 500;
 					line-height: 25px;
-					color: #101817;
+					color: $heading-txt-color;
 
 				}
 			}
@@ -138,7 +138,7 @@
 						}
 						p{
 							font-size: 16px;
-							 color: #101817;
+							 color: $heading-txt-color;
 							
 						}
                     }
@@ -151,27 +151,28 @@
 
 					.school-bg {
 
-						background-color: #29acc4;
+						background-color: $bg-color1;
 					}
 
 					.Insurance-bg {
-						background-color: #5bc784;
+						background-color: $bg-color2;
 
 
 					}
 
 					.COVID-bg {
-						background-color: #e672a3;
+						background-color: $bg-color3;
 
 					}
 
 				}
 
-				.events {
+				.active {
 					background-color: $notification-bg;
+					
 
 					.events-bg {
-						background-color: #8191e8;
+						background-color: $bg-color4;
 
 
 					}
@@ -180,4 +181,3 @@
 		}
 	}
 
-}

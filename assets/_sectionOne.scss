@@ -1,14 +1,13 @@
-#section-1 {
+.banner-section{
 	position: relative;
-	padding-bottom: 22px;
-
-
+	padding-top: 37px;
 	.left-contet {
 		display: flex;
+		align-items: center;
 
 		.family-img {
 			width: 250px;
-			padding: 18px 13px 0 0px;
+			padding: 0px 13px 0 0px;
 
 		}
 
@@ -17,7 +16,7 @@
 
 				font-size: 52px;
 				font-weight: 600;
-				padding: 55px 0 0 0;
+				padding: 10px 0 0 0;
 
 			}
 
@@ -37,7 +36,7 @@
 		background: $notification-bg;
 		// float: right;
 		position: absolute;
-		top: 61px;
+		top: 50px;
 		right: 0;
 		border-radius: 10px;
 
@@ -46,13 +45,17 @@
 			justify-content: space-between;
 			align-items: center;
 			padding: 0px 40px 0px 20px;
-
-			.feature-img {
-				width: 30px;
+			button.feature-img {
+				background: transparent;
+				border: none;
+				&.feature-img {
+					width: 48px;
+				}
 			}
+			
 
 			.Vaccinations-content {
-				h2 {
+				p{
 					font-size: 22px;
 					font-weight: 500;
 					padding: 0 20px;
@@ -75,18 +78,10 @@
 				width: 36px;
 				height: 36px;
 				background: $alert-icon;
-				;
+				border: none;
 				border-radius: 50%;
 				position: relative;
 
-				h3 {
-					position: absolute;
-					top: 0px;
-					font-size: 30px;
-					color: $main-bg-color;
-					right: 9px;
-					font-weight: bold;
-				}
 
 			}
 

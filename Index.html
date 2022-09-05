@@ -8,6 +8,8 @@
 	<title>Othena</title>
 	<link rel="icon" type="ico" href="./assets/images/favIcon.ico">
 	<link rel="stylesheet" href="./sass/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -38,8 +40,8 @@
 			</div>
 		</div>
 	</header>
-	<section id="section-1">
-		<div class="wrapper">
+	<section class="banner-section wrapper" >
+	
 			<div class="left-contet">
 				<div class="family-img">
 					<img src="./assets/images/Mask Group 95619@2x.png" alt="family-img">
@@ -51,27 +53,25 @@
 			</div>
 			<div class="right-content">
 				<div class="inner-content">
-					<div class="feature-img">
+					<button class="feature-img">
 						<img src="./assets/images/Icon feather-alert-circle@2x.png" alt="feather-img">
-					</div>
+					</button>
 					<div class="Vaccinations-content">
-						<h2>New Service Available: Travel Vaccinations!</h2>
+						<p>New Service Available: Travel Vaccinations!</p>
 						<a href="#">Learn More</a>
 					</div>
-					<div class="ellipse">
-						<h3>&times;</h3>
-					</div>
+					<button class="ellipse">
+						<img src="./assets/images/9104213_close_cross_remove_delete_icon.svg" alt="cross_remove_delete">
+					</button>
 				</div>
 
 			</div>
-		</div>
 	</section>
-	<section class="section-2">
-		<div class="wrapper">
-			<div class="content">
-				<h3>Your Organization</h3>
+	<section class="organization wrapper">
 				<div class="bottom-content">
+					
 					<div class="District">
+						<h3>Your Organization</h3>
 						<div class="District-cover">
 							<h3>Santa Ana Unified School District</h3>
 							<div class="arrow"></div>
@@ -87,7 +87,7 @@
 					</div>
 
 					<div class="right-content">
-						<div class="dropdown-container Schools-Enrolled ">
+						<div class="dropdown-container Schools-Enrolled active  ">
 							<div class="school-bg box-size">
 								<img src="./assets/images/schools-enrolled.svg" alt="">
 							</div>
@@ -98,7 +98,7 @@
 							<div class="arrow"></div>
 						</div>
 
-						<div class="dropdown-container events ">
+						<div class="dropdown-container events active ">
 							<div class="events-bg box-size">
 								<img src="./assets/images/events.svg" alt="">
 							</div>
@@ -133,10 +133,55 @@
 						</div>
 					</div>
 				</div>
+	</section>
+	<div class="wrapper">
+		<section class="section-4">
+			
+			<div class="top-head">
+				<h3>Enrollment</h3>
+				<table style="width:100%">
+					<tr>
+					  <th>All</th>
+					  <th>Incomplete</th>
+					  <th>Complete</th>
+					  <th>Ongoing</th>
+					</tr>
+					
+				  </table>
+				  <form class="example" action="/action_page.php">
+					<input type="text" placeholder="Search.." name="search">
+					<button type="submit"><i class="fa fa-search"></i></button>
+				  </form>
+				 <div class="list-main">
+					<button class="map" type="submit"><img src="./assets/images/Icon awesome-map-marker@2x.png" alt=""></button>
+					<button class="list" type="submit"><img src="./assets/images/list@2x.png" alt=""></button>
+				 </div>
+				 <button class="filter" type="submit"><img src="./assets/images/Icon feather-filter@2x.png" alt=""></button>
+	
+	
+			</div>
+		
+		<div class="header-2">    
+			<h3>Your Active Enrollment This Week (4)</h3>
+			<div class="right-option-bar">
+			<select name="cars" id="cars">
+				<option value="volvo">Select Test Type</option>
+				
+			  </select>
+			  <select name="cars" id="cars">
+				<option value="volvo"> Start Date</option>
+			
+			  </select>
+			  <select name="cars" id="cars">
+				<option value="volvo">End Date</option>
+			
+			  </select>
 			</div>
 
-		</div>
-	</section>
+		 </div>
+		</section>
+		
+	</div>
 
 </body>
 
