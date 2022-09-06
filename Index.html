@@ -137,13 +137,13 @@
 				<h3>Enrollment</h3>
 				<div class="enrollment-status">
 					<div class="enrollment-status-btns">
-					<button class="status-btn active" type="button">All</button>
-					<button class="status-btn " type="button">Incomplete</button>
-					<button class="status-btn" type="button">Complete</button>
-					<button class="status-btn" type="button">Ongoing</button>
-				
-				</div>
-				<!-- <table style="width:100%">
+						<button class="status-btn active" type="button">All</button>
+						<button class="status-btn " type="button">Incomplete</button>
+						<button class="status-btn" type="button">Complete</button>
+						<button class="status-btn" type="button">Ongoing</button>
+
+					</div>
+					<!-- <table style="width:100%">
 					<tr>
 						<th>All</th>
 						<th>Incomplete</th>
@@ -152,25 +152,26 @@
 					</tr>
 
 				</table> -->
-				<form class="example" action="/action_page.php">
-					<input type="text" placeholder="Search.." name="search">
-					<button type="submit"><i class="fa fa-search"></i></button>
-				</form>
-				<div class="list-main">
-					<button class="map" type="submit"><img src="./assets/images/Icon awesome-map-marker@2x.png"
-							alt=""></button>
-					<button class="list" type="submit"><img src="./assets/images/list@2x.png" alt=""></button>
-				</div>
-				<button class="filter" type="submit"><img src="./assets/images/Icon feather-filter@2x.png"
-						alt=""></button>
-
+					<form class="example" action="/action_page.php">
+						<input type="text" placeholder="Search.." name="search">
+						<button type="submit"><i class="fa fa-search"></i></button>
+					</form>
+					<div class="list-main">
+						<button class="map" type="submit"><img src="./assets/images/Icon awesome-map-marker@2x.png"
+								alt=""></button>
+						<button class="list" type="submit"><img src="./assets/images/list@2x.png" alt=""></button>
 					</div>
+					<button class="filter" type="submit"><img src="./assets/images/Icon feather-filter@2x.png"
+							alt=""></button>
+
+				</div>
 			</div>
 
 			<div class="header-2">
 				<h3>Your Active Enrollment This Week (4)</h3>
 				<div class="right-option-bar">
-					<select name="cars" id="cars">
+				<div class=" selectdiv">
+					<!-- <select name="cars" id="cars">
 						<option value="volvo">Select Test Type</option>
 
 					</select>
@@ -181,8 +182,31 @@
 					<select name="cars" id="cars">
 						<option value="volvo">End Date</option>
 
+					</select> -->
+					<select>
+						<option selected>Select Test Type </option>
+						
 					</select>
+					
 				</div>
+				<div class=" selectdiv">
+					
+					<select>
+						<option selected> Start Date </option>
+					
+					</select>
+					
+				</div>
+				<div class=" selectdiv">
+					
+					<select>
+						<option selected>End Date </option>
+						
+					</select>
+					
+				</div>
+			</div>
+				
 
 			</div>
 
@@ -210,8 +234,9 @@
 					<td class="col-10">NancyPorter</td>
 					<td class="col-10">(477)323-6483</td>
 					<td class="col-15"> 123 Fake StreetIrvine, CA 92618</td>
-					<td class="col-15"><button class="completed-btn" type="button">completed</button><button type="submit" class="edit-btn"><i class="fa fa-pencil"></i></button></td>
-			
+					<td class="col-15"><button class="completed-btn" type="button">completed</button><button
+							type="submit" class="edit-btn"><i class="fa fa-pencil"></i></button></td>
+
 				</tr>
 				<tr>
 					<td class="col-20">Thomas Jefferson High School
@@ -222,8 +247,9 @@
 					<td class="col-10">NancyPorter</td>
 					<td class="col-10">(477)323-6483</td>
 					<td class="col-15"> 123 Fake StreetIrvine, CA 92618</td>
-					<td class="col-15"><button class="ongoing-btn " type="button">completed</button><button type="submit" class="edit-btn"><i class="fa fa-pencil"></i></button></td>
-			
+					<td class="col-15"><button class="ongoing-btn " type="button">completed</button><button
+							type="submit" class="edit-btn"><i class="fa fa-pencil"></i></button></td>
+
 				</tr>
 				<tr>
 					<td class="col-20">Thomas Jefferson High School
@@ -234,19 +260,24 @@
 					<td class="col-10">NancyPorter</td>
 					<td class="col-10">(477)323-6483</td>
 					<td class="col-15"> 123 Fake StreetIrvine, CA 92618</td>
-					<td class="col-15"><button class="completed-btn" type="button">completed</button><button type="submit" class="edit-btn"><i class="fa fa-pencil"></i></button></td>
-			
+					<td class="col-15"><button class="completed-btn" type="button">completed</button><button
+							type="submit" class="edit-btn"><i class="fa fa-pencil"></i></button></td>
+
 				</tr>
-			
-			
-			
-			
-			
+
+
+
+
+
 			</table>
 
 		</div>
 	</section>
-
+	<div class="c">
+<select name="" id="">
+	<option value="">1</option>
+</select>
+</div>
 
 
 </body>

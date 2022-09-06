@@ -2,15 +2,14 @@
 	.enrollment-content {
 		padding: 28px 32px;
 		border-radius: 10px;
-		border: solid 2px #e6e6e6;
-		background-color: #fff;
+		border: solid 2px $border-thin;
+		background-color: $main-bg-color;
 
 
 		.top-head {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-
 
 			h3 {
 				font-size: 30px;
@@ -20,7 +19,7 @@
 				line-height: normal;
 				letter-spacing: normal;
 				text-align: left;
-				color: #0e1817;
+				color: $heading3-txt-color;
 			}
 
 			.enrollment-status {
@@ -31,31 +30,27 @@
 					margin-right: 77px;
 					display: flex;
 
-
 					.status-btn {
 						padding: 20.5px 24px 18.5px 21px;
-						background-color: #fff;
-						border: solid 1px #e3e3e3;
+						background-color: $main-bg-color;
+						border: solid 1px $border-bold;
 						font-weight: normal;
 						font-stretch: normal;
 						font-style: normal;
 						line-height: normal;
 						letter-spacing: normal;
 						text-align: left;
-						color: #4c4c4c;
-                        cursor: pointer;
+						color: $heading2-txt-color;
+						cursor: pointer;
 
 						&.active {
-							background-color: #7cb150;
-							color: #fff;
+							background-color: $alert-icon;
+							color: $main-bg-color;
+							font-weight: 500;
 						}
 
 						&:first-child {
 							border-radius: 10px 0 0px 10px;
-
-							font-weight: 500;
-
-
 						}
 
 						&:last-child {
@@ -133,25 +128,22 @@
 				// }
 
 				form.example input[type=text] {
-
 					font-size: 17px;
-
 					float: left;
 					width: 500px;
-					background: #f1f1f1;
+					background: $main-bg-2-color;
 					padding: 16px 15.4px 18px 17px;
 					border-radius: 5px 0px 0px 5px;
-					border: solid 1px #e2e2e2;
-					background-color: #fff;
+					border: solid 1px $border-2-bold;
+					background-color: $main-bg-color;
 					padding: 16.5px 15.4px 16.5px 17px;
 				}
 
 				form.example button {
 					float: left;
-
 					padding: 10px;
 					background: $alert-icon;
-					color: white;
+					color: $main-bg-color;
 					font-size: 17px;
 					border-left: none;
 					cursor: pointer;
@@ -159,12 +151,8 @@
 					border-radius: 0px 5px 5px 0px;
 					border: none;
 					margin-right: 15px;
-                    cursor: pointer;
-
-
+					cursor: pointer;
 				}
-
-
 
 				form.example::after {
 					content: "";
@@ -179,24 +167,23 @@
 					.map {
 						padding: 17.5px 20px 16.5px;
 						border-radius: 5px 0px 0px 5px;
-						border: solid 1px #e2e2e2;
-						background-color: #fff;
+						border: solid 1px $border-2-bold;
+						background-color: $main-bg-color;
 						padding: 15px 20px 15px 20px;
-                        cursor: pointer;
+						cursor: pointer;
 
 						img {
 							width: 15.8px;
-
 						}
 					}
 
 					.list {
 						padding: 17.5px 20px 16.5px;
 						border-radius: 0px 5px 5px 0px;
-						background-color: #7cb150;
-						border: solid 1px #e2e2e2;
+						background-color: $alert-icon;
+						border: solid 1px $border-2-bold;
 						padding: 15px 20px 15px 20px;
-                        cursor: pointer;
+						cursor: pointer;
 
 						img {
 							width: 20.7px;
@@ -207,17 +194,16 @@
 				.filter {
 					padding: 16.5px 15.5px 16.9px 15.5px;
 					border-radius: 5px;
-					border: solid 1px #e2e2e2;
-					background-color: #fff;
+					border: solid 1px $border-2-bold;
+					background-color: $main-bg-color;
 					padding: 14px 15px 14px 15px;
-                    cursor: pointer;
+					cursor: pointer;
 
 					img {
 						width: 24px;
 					}
 				}
 			}
-
 		}
 
 		.header-2 {
@@ -234,80 +220,122 @@
 				line-height: normal;
 				letter-spacing: normal;
 				text-align: left;
-				color: #0e1817;
+				color: $heading3-txt-color;
 			}
+		}
+
+
+		.selectdiv {
+			position: relative;
+			/*Don't really need this just for demo styling*/
+
+			float: left;
 
 		}
 
-		.right-option-bar {
-			select {
-
-				padding: 16px 135.4px 18px 17px;
-				border-radius: 5px;
-				border: solid 1px #e2e2e2;
-				background-color: #fff;
-				margin-left: 16px;
-				font-size: 17px;
-				color: #4c4c4c;
-			}
+		.selectdiv:after {
+			content: '\f078';
+			font: normal normal normal 14px/1 FontAwesome;
+			right: 11px;
+			top: 10px;
+			height: 34px;
+			padding: 15px 0px 0px 8px;
+			color: #4c4c4c;
+			position: absolute;
+			pointer-events: none;
 		}
+
+		select::-ms-expand {
+			display: none;
+		}
+
+		.selectdiv select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+
+			display: block;
+
+			float: right;
+
+			font-size: 16px;
+			line-height: 1.75;
+			color: #333;
+			background-color: #ffffff;
+			background-image: none;
+
+			-ms-word-break: normal;
+			word-break: normal;
+			padding: 16px 135.4px 18px 17px;
+			border-radius: 5px;
+			border: solid 1px $border-2-bold;
+			background-color: $main-bg-color;
+			margin-left: 16px;
+			font-size: 17px;
+			color: $heading2-txt-color;
+		}
+
+		// .right-option-bar {
+		// 	select {
+		// 		padding: 16px 135.4px 18px 17px;
+		// 		border-radius: 5px;
+		// 		border: solid 1px $border-2-bold;
+		// 		background-color: $main-bg-color;
+		// 		margin-left: 16px;
+		// 		font-size: 17px;
+		// 		color: $heading2-txt-color;
+		// 		appearance: none;
+
+
+		// 	}
+		// }
+
 
 		.enrollment-tbl {
 			border-collapse: collapse;
 			width: 100%;
 
-
-
 			tr {
 				display: flex;
 				margin-bottom: 20px;
 				box-shadow: 0 20px 50px 0 rgb(150 163 190 / 7%);
-
 			}
 
 			th {
-
 				text-align: left;
-
-				color: #000;
+				color: $main-txt-color;
 				border: none;
 				padding: 29px 5px 10.5px 5px;
 				border-radius: 10px;
-				background-color: #fff;
-
+				background-color: $main-bg-color;
 				font-size: 20px;
 				font-weight: normal;
-
-				color: #4c4c4c;
+				color: $heading2-txt-color;
 
 				&:first-child {
-
 					padding-left: 40px;
 				}
 			}
 
 			td {
-
 				font-size: 22px;
-
 				font-weight: 500;
-				color: #0e1817;
-				border-top: solid 2px #e6e6e6;
-				border-bottom: solid 2px #e6e6e6;
+				color: $heading3-txt-color;
+				border-top: solid 2px $border-thin;
+				border-bottom: solid 2px $border-thin;
 				padding: 25px 5px;
 				align-items: center;
 				display: flex;
 
-
 				&:first-child {
-					border-left: solid 2px #e6e6e6;
+					border-left: solid 2px $border-thin;
 					border-radius: 10px 0 0 10px;
 					box-shadow: 0 20px 50px 0 rgba(150, 163, 190, 0.07);
 					padding-left: 40px;
 				}
 
 				&:last-child {
-					border-right: solid 2px #e6e6e6;
+					border-right: solid 2px $border-thin;
 					border-radius: 0 10px 10px 0;
 					box-shadow: 0 20px 50px 0 rgba(150, 163, 190, 0.07);
 				}
@@ -319,40 +347,35 @@
 					border: none;
 					font-size: 16px;
 					font-weight: 500;
-
-					color: #28a03b;
+					color: $btn-bg-active;
 				}
 
 				.ongoing-btn {
 					padding: 8px 22.9px 8px 23.1px;
 					border-radius: 16px;
 					background-color: #f7f3e5;
-
 					border: none;
 					font-size: 16px;
 					font-weight: 500;
-
 					color: #efb023;
 				}
 
 				.edit-btn {
 					width: 32px;
 					height: 32px;
-					background-color: #e6f3ee;
+					background-color: $notification-bg;
 					border: none;
 					border-radius: 50px;
 					margin-left: 48px;
-                    cursor: pointer;
-
+					cursor: pointer;
 
 					i {
 						&.fa {
-							color: #28a03b;
+							color: $btn-bg-active;
 							;
 						}
 					}
 				}
-
 			}
 
 			th,
@@ -369,9 +392,6 @@
 					width: 15%;
 				}
 			}
-
-
 		}
-
 	}
 }

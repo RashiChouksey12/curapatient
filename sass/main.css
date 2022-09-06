@@ -300,10 +300,10 @@
 .enrollment .enrollment-content .top-head .enrollment-status .enrollment-status-btns .status-btn.active {
   background-color: #7cb150;
   color: #fff;
+  font-weight: 500;
 }
 .enrollment .enrollment-content .top-head .enrollment-status .enrollment-status-btns .status-btn:first-child {
   border-radius: 10px 0 0px 10px;
-  font-weight: 500;
 }
 .enrollment .enrollment-content .top-head .enrollment-status .enrollment-status-btns .status-btn:last-child {
   border-radius: 0px 10px 10px 0px;
@@ -323,7 +323,7 @@
   float: left;
   padding: 10px;
   background: #7cb150;
-  color: white;
+  color: #fff;
   font-size: 17px;
   border-left: none;
   cursor: pointer;
@@ -391,7 +391,38 @@
   text-align: left;
   color: #0e1817;
 }
-.enrollment .enrollment-content .right-option-bar select {
+.enrollment .enrollment-content .selectdiv {
+  position: relative;
+  /*Don't really need this just for demo styling*/
+  float: left;
+}
+.enrollment .enrollment-content .selectdiv:after {
+  content: "\f078";
+  font: normal normal normal 14px/1 FontAwesome;
+  right: 11px;
+  top: 10px;
+  height: 34px;
+  padding: 15px 0px 0px 8px;
+  color: #4c4c4c;
+  position: absolute;
+  pointer-events: none;
+}
+.enrollment .enrollment-content select::-ms-expand {
+  display: none;
+}
+.enrollment .enrollment-content .selectdiv select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  float: right;
+  font-size: 16px;
+  line-height: 1.75;
+  color: #333;
+  background-color: #ffffff;
+  background-image: none;
+  -ms-word-break: normal;
+  word-break: normal;
   padding: 16px 135.4px 18px 17px;
   border-radius: 5px;
   border: solid 1px #e2e2e2;
