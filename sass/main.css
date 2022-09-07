@@ -46,33 +46,35 @@
   padding-top: 10px;
 }
 .banner-section .right-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px 0px 20px;
   background: #e6f3ee;
   position: absolute;
   top: 50px;
   right: 0;
   border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
 }
-.banner-section .right-content .inner-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 40px 0px 20px;
-}
-.banner-section .right-content .inner-content button.feature-img {
+.banner-section .right-content button.feature-img {
   background: transparent;
   border: none;
   cursor: pointer;
 }
-.banner-section .right-content .inner-content button.feature-img.feature-img {
+.banner-section .right-content button.feature-img.feature-img {
   width: 48px;
 }
-.banner-section .right-content .inner-content .Vaccinations-content p {
+.banner-section .right-content .Vaccinations-content p {
   font-size: 22px;
   font-weight: 500;
   padding: 0 20px;
   margin: 13px 0 10px 0;
 }
-.banner-section .right-content .inner-content .Vaccinations-content a {
+.banner-section .right-content .Vaccinations-content a {
   font-weight: 500;
   color: #7cb150;
   padding-left: 22px;
@@ -80,14 +82,24 @@
   display: block;
   margin-bottom: 13px;
 }
-.banner-section .right-content .inner-content .ellipse {
+.banner-section .right-content .ellipse {
   width: 36px inherit;
   width: 36px;
   height: 36px;
   background: #7cb150;
   border: none;
-  border-radius: 50%;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
   position: relative;
+}
+.banner-section .right-content .ellipse img {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 25.9px;
 }
 
 .organization .bottom-content {
@@ -95,6 +107,10 @@
   align-items: center;
   padding: 20px 20px 20px 21.2px;
   border-radius: 14px;
+  -o-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.08);
 }
 .organization .bottom-content .District {
@@ -114,8 +130,12 @@
   background-color: #e6f3ee;
   padding: 12px 17.4px 12px 13px;
   border-radius: 5px;
-  align-items: center;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
   cursor: pointer;
+  justify-content: space-between;
 }
 .organization .bottom-content .District .District-cover h3 {
   font-size: 20px;
@@ -127,8 +147,8 @@
 }
 .organization .bottom-content .District .District-cover .arrow {
   box-sizing: border-box;
-  width: 13.2px;
-  height: 13.2px;
+  width: 12px;
+  height: 12px;
   border-style: solid;
   border-color: black;
   border-width: 0px 2.5px 2.5px 0px;
@@ -157,6 +177,10 @@
 .organization .bottom-content .right-content .dropdown-container {
   padding: 20px 17.3px 19px 23px;
   border-radius: 14px;
+  -o-border-radius: 14px;
+  -ms-border-radius: 14px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
   border: solid 1px #eaeaea;
   width: 25%;
   position: relative;
@@ -234,6 +258,10 @@
   width: 82px;
   height: 82px;
   border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
   position: relative;
 }
 .organization .bottom-content .right-content .dropdown-container .school-bg {
@@ -255,141 +283,18 @@
   border-width: 2.5px 0px 0px 2.5px;
 }
 
+.enrollment {
+  margin-top: 25px;
+}
 .enrollment .enrollment-content {
   padding: 28px 32px;
   border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
   border: solid 2px #e6e6e6;
   background-color: #fff;
-}
-.enrollment .enrollment-content .top-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.enrollment .enrollment-content .top-head h3 {
-  font-size: 30px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #0e1817;
-}
-.enrollment .enrollment-content .top-head .enrollment-status {
-  display: flex;
-  align-items: center;
-}
-.enrollment .enrollment-content .top-head .enrollment-status .enrollment-status-btns {
-  margin-right: 77px;
-  display: flex;
-}
-.enrollment .enrollment-content .top-head .enrollment-status .enrollment-status-btns .status-btn {
-  padding: 20.5px 24px 18.5px 21px;
-  background-color: #fff;
-  border: solid 1px #e3e3e3;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #4c4c4c;
-  cursor: pointer;
-}
-.enrollment .enrollment-content .top-head .enrollment-status .enrollment-status-btns .status-btn.active {
-  background-color: #7cb150;
-  color: #fff;
-  font-weight: 500;
-}
-.enrollment .enrollment-content .top-head .enrollment-status .enrollment-status-btns .status-btn:first-child {
-  border-radius: 10px 0 0px 10px;
-}
-.enrollment .enrollment-content .top-head .enrollment-status .enrollment-status-btns .status-btn:last-child {
-  border-radius: 0px 10px 10px 0px;
-}
-.enrollment .enrollment-content .top-head .enrollment-status form.example input[type=text] {
-  font-size: 17px;
-  float: left;
-  width: 500px;
-  background: #f1f1f1;
-  padding: 16px 15.4px 18px 17px;
-  border-radius: 5px 0px 0px 5px;
-  border: solid 1px #e2e2e2;
-  background-color: #fff;
-  padding: 16.5px 15.4px 16.5px 17px;
-}
-.enrollment .enrollment-content .top-head .enrollment-status form.example button {
-  float: left;
-  padding: 10px;
-  background: #7cb150;
-  color: #fff;
-  font-size: 17px;
-  border-left: none;
-  cursor: pointer;
-  padding: 17px 22px 19px 17px;
-  border-radius: 0px 5px 5px 0px;
-  border: none;
-  margin-right: 15px;
-  cursor: pointer;
-}
-.enrollment .enrollment-content .top-head .enrollment-status form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-.enrollment .enrollment-content .top-head .enrollment-status .list-main {
-  display: flex;
-  margin-right: 14px;
-}
-.enrollment .enrollment-content .top-head .enrollment-status .list-main .map {
-  padding: 17.5px 20px 16.5px;
-  border-radius: 5px 0px 0px 5px;
-  border: solid 1px #e2e2e2;
-  background-color: #fff;
-  padding: 15px 20px 15px 20px;
-  cursor: pointer;
-}
-.enrollment .enrollment-content .top-head .enrollment-status .list-main .map img {
-  width: 15.8px;
-}
-.enrollment .enrollment-content .top-head .enrollment-status .list-main .list {
-  padding: 17.5px 20px 16.5px;
-  border-radius: 0px 5px 5px 0px;
-  background-color: #7cb150;
-  border: solid 1px #e2e2e2;
-  padding: 15px 20px 15px 20px;
-  cursor: pointer;
-}
-.enrollment .enrollment-content .top-head .enrollment-status .list-main .list img {
-  width: 20.7px;
-}
-.enrollment .enrollment-content .top-head .enrollment-status .filter {
-  padding: 16.5px 15.5px 16.9px 15.5px;
-  border-radius: 5px;
-  border: solid 1px #e2e2e2;
-  background-color: #fff;
-  padding: 14px 15px 14px 15px;
-  cursor: pointer;
-}
-.enrollment .enrollment-content .top-head .enrollment-status .filter img {
-  width: 24px;
-}
-.enrollment .enrollment-content .header-2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 37px 0;
-}
-.enrollment .enrollment-content .header-2 h3 {
-  font-size: 22px;
-  font-weight: 500;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #0e1817;
 }
 .enrollment .enrollment-content .selectdiv {
   position: relative;
@@ -423,13 +328,24 @@
   background-image: none;
   -ms-word-break: normal;
   word-break: normal;
-  padding: 16px 135.4px 18px 17px;
+  padding: 16px 30px 18px 17px;
   border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
   border: solid 1px #e2e2e2;
   background-color: #fff;
   margin-left: 16px;
   font-size: 17px;
   color: #4c4c4c;
+  max-width: 300px;
+}
+.enrollment .enrollment-content .test-option {
+  width: 300px;
+}
+.enrollment .enrollment-content .date-option {
+  width: 170px;
 }
 .enrollment .enrollment-content .enrollment-tbl {
   border-collapse: collapse;
@@ -446,6 +362,10 @@
   border: none;
   padding: 29px 5px 10.5px 5px;
   border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
   background-color: #fff;
   font-size: 20px;
   font-weight: normal;
@@ -458,26 +378,38 @@
   font-size: 22px;
   font-weight: 500;
   color: #0e1817;
-  border-top: solid 2px #e6e6e6;
-  border-bottom: solid 2px #e6e6e6;
+  border-top: solid 1px #e6e6e6;
+  border-bottom: solid 1px #e6e6e6;
   padding: 25px 5px;
   align-items: center;
   display: flex;
 }
 .enrollment .enrollment-content .enrollment-tbl td:first-child {
-  border-left: solid 2px #e6e6e6;
+  border-left: solid 1px #e6e6e6;
   border-radius: 10px 0 0 10px;
+  -o-border-radius: 10px 0 0 10px;
+  -ms-border-radius: 10px 0 0 10px;
+  -moz-border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
   box-shadow: 0 20px 50px 0 rgba(150, 163, 190, 0.07);
   padding-left: 40px;
 }
 .enrollment .enrollment-content .enrollment-tbl td:last-child {
-  border-right: solid 2px #e6e6e6;
+  border-right: solid 1px #e6e6e6;
   border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
   box-shadow: 0 20px 50px 0 rgba(150, 163, 190, 0.07);
 }
 .enrollment .enrollment-content .enrollment-tbl td .completed-btn {
   padding: 8px 22.9px 8px 23.1px;
   border-radius: 16px;
+  -o-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
   background-color: #e6f3ee;
   border: none;
   font-size: 16px;
@@ -487,6 +419,10 @@
 .enrollment .enrollment-content .enrollment-tbl td .ongoing-btn {
   padding: 8px 22.9px 8px 23.1px;
   border-radius: 16px;
+  -o-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -webkit-border-radius: 16px;
   background-color: #f7f3e5;
   border: none;
   font-size: 16px;
@@ -499,6 +435,10 @@
   background-color: #e6f3ee;
   border: none;
   border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
   margin-left: 48px;
   cursor: pointer;
 }
@@ -517,56 +457,196 @@
 .enrollment .enrollment-content .enrollment-tbl td.col-15 {
   width: 15%;
 }
-
-* {
-  box-sizing: border-box;
+.enrollment .enrollment-content .pagination {
+  padding-top: 55px;
+}
+.enrollment .enrollment-content .pagination ul {
+  display: flex;
+  justify-content: center;
+}
+.enrollment .enrollment-content .pagination ul li {
+  margin: 0px 5px;
+}
+.enrollment .enrollment-content .pagination ul li button {
+  width: 33px;
+  height: 33px;
+  border-radius: 6px;
+  -o-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border: solid 2px #d0d0d0;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  color: #7cb150;
+}
+.enrollment .enrollment-content .pagination ul li button.active {
+  background-color: #7cb150;
+  color: #fff;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: author;
+.top-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-head h3 {
+  font-size: 30px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0e1817;
+}
+.top-head .enrollment-status {
+  display: flex;
+  align-items: center;
+}
+.top-head .enrollment-status .enrollment-status-btns {
+  margin-right: 77px;
+  display: flex;
+}
+.top-head .enrollment-status .enrollment-status-btns .status-btn {
+  padding: 20.5px 24px 18.5px 21px;
+  background-color: #fff;
+  border: solid 1px #e3e3e3;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #4c4c4c;
+  cursor: pointer;
+  border-left: 0;
+  font-size: 16px;
+}
+.top-head .enrollment-status .enrollment-status-btns .status-btn.active {
+  background-color: #7cb150;
+  color: #fff;
+  font-weight: 500;
+}
+.top-head .enrollment-status .enrollment-status-btns .status-btn:first-child {
+  border-radius: 10px 0 0px 10px;
+  -o-border-radius: 10px 0 0px 10px;
+  -ms-border-radius: 10px 0 0px 10px;
+  -moz-border-radius: 10px 0 0px 10px;
+  -webkit-border-radius: 10px 0 0px 10px;
+}
+.top-head .enrollment-status .enrollment-status-btns .status-btn:last-child {
+  border-radius: 0px 10px 10px 0px;
+  -o-border-radius: 0px 10px 10px 0px;
+  -ms-border-radius: 0px 10px 10px 0px;
+  -moz-border-radius: 0px 10px 10px 0px;
+  -webkit-border-radius: 0px 10px 10px 0px;
+}
+.top-head .enrollment-status form.example input[type=text] {
+  font-size: 17px;
+  float: left;
+  width: 500px;
+  background: #f1f1f1;
+  padding: 16px 15.4px 18px 17px;
+  border-radius: 5px 0px 0px 5px;
+  -o-border-radius: 5px 0px 0px 5px;
+  -ms-border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+  border: solid 1px #e2e2e2;
+  background-color: #fff;
+  padding: 16.5px 15.4px 16.5px 17px;
+}
+.top-head .enrollment-status form.example button {
+  float: left;
+  padding: 10px;
+  background: #7cb150;
+  color: #fff;
+  font-size: 17px;
+  border-left: none;
+  cursor: pointer;
+  padding: 17px 22px 19px 17px;
+  border-radius: 0px 5px 5px 0px;
+  -o-border-radius: 0px 5px 5px 0px;
+  -ms-border-radius: 0px 5px 5px 0px;
+  -moz-border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius: 0px 5px 5px 0px;
+  border: none;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.top-head .enrollment-status form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.top-head .enrollment-status .list-main {
+  display: flex;
+  margin-right: 14px;
+}
+.top-head .enrollment-status .list-main .map {
+  padding: 17.5px 20px 16.5px;
+  border-radius: 5px 0px 0px 5px;
+  -o-border-radius: 5px 0px 0px 5px;
+  -ms-border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+  border: solid 1px #e2e2e2;
+  background-color: #fff;
+  padding: 15px 20px 15px 20px;
+  cursor: pointer;
+}
+.top-head .enrollment-status .list-main .map img {
+  width: 15.8px;
+}
+.top-head .enrollment-status .list-main .list {
+  padding: 17.5px 20px 16.5px;
+  border-radius: 0px 5px 5px 0px;
+  -o-border-radius: 0px 5px 5px 0px;
+  -ms-border-radius: 0px 5px 5px 0px;
+  -moz-border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius: 0px 5px 5px 0px;
+  background-color: #7cb150;
+  border: solid 1px #e2e2e2;
+  padding: 15px 20px 15px 20px;
+  cursor: pointer;
+  border-left: 0;
+}
+.top-head .enrollment-status .list-main .list img {
+  width: 20.7px;
+}
+.top-head .enrollment-status .filter {
+  padding: 16.5px 15.5px 16.9px 15.5px;
+  border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: solid 1px #e2e2e2;
+  background-color: #fff;
+  padding: 14px 15px 14px 15px;
+  cursor: pointer;
+}
+.top-head .enrollment-status .filter img {
+  width: 24px;
 }
 
-h1,
-p,
-h3,
-h5 {
-  margin: 0;
+.header-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 37px 0;
 }
-
-.arrow {
-  box-sizing: border-box;
-  width: 13.2px;
-  height: 13.2px;
-  border-style: solid;
-  border-color: #4c4c4c;
-  border-width: 0px 2.5px 2.5px 0px;
-  transform: rotate(45deg);
-  margin-left: 32px;
-}
-
-img {
-  width: 100%;
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-}
-
-.wrapper {
-  padding: 0 50px;
-  margin: 0 auto;
-  max-width: 2000px;
-}
-
-.logo {
-  width: 192px;
+.header-2 h3 {
+  font-size: 22px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0e1817;
 }
 
 header {
@@ -604,6 +684,10 @@ header .navigation .nav ul li a {
 header .navigation .nav ul li a.active {
   background-color: rgba(129, 193, 75, 0.23);
   border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
 }
 header .navigation .nav ul li a img {
   width: auto;
@@ -629,7 +713,11 @@ header .account-section .notification.notify:after {
   content: "";
   width: 8px;
   height: 8px;
-  border-radius: 50%;
+  border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
   background-color: #54c38b;
   position: absolute;
   top: 14px;
@@ -649,4 +737,55 @@ header .account-section .notification.profile {
 header .account-section .notification.profile img {
   width: 52px;
   height: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: author;
+}
+
+h1,
+p,
+h3,
+h5 {
+  margin: 0;
+}
+
+.arrow {
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border-style: solid;
+  border-color: #4c4c4c;
+  border-width: 0px 2.5px 2.5px 0px;
+  transform: rotate(45deg);
+  margin-left: 32px;
+}
+
+img {
+  width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  padding: 0 50px;
+  margin: 0 auto;
+  max-width: 2000px;
+}
+
+.logo {
+  width: 192px;
 }/*# sourceMappingURL=main.css.map */

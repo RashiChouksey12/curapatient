@@ -1,0 +1,205 @@
+.enrollment {
+	margin-top: 25px;
+
+	.enrollment-content {
+		padding: 28px 32px;
+		@include border-radius(10px);
+		border: solid 2px $border-thin;
+		background-color: $main-bg-color;
+
+		.selectdiv {
+			position: relative;
+			/*Don't really need this just for demo styling*/
+			float: left;
+		}
+
+		.selectdiv:after {
+			content: '\f078';
+			font: normal normal normal 14px/1 FontAwesome;
+			right: 11px;
+			top: 10px;
+			height: 34px;
+			padding: 15px 0px 0px 8px;
+			color: #4c4c4c;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		select::-ms-expand {
+			display: none;
+		}
+
+		.selectdiv select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+
+			display: block;
+
+			float: right;
+
+			font-size: 16px;
+			line-height: 1.75;
+			color: #333;
+			background-color: #ffffff;
+			background-image: none;
+
+			-ms-word-break: normal;
+			word-break: normal;
+			padding: 16px 30px 18px 17px;
+			@include border-radius(5px);
+			border: solid 1px $border-2-bold;
+			background-color: $main-bg-color;
+			margin-left: 16px;
+			font-size: 17px;
+			color: $heading2-txt-color;
+			max-width: 300px;
+
+		}
+
+		.test-option {
+			width: 300px;
+		}
+
+		.date-option {
+			width: 170px;
+		}
+
+		.enrollment-tbl {
+			border-collapse: collapse;
+			width: 100%;
+
+			tr {
+				display: flex;
+				margin-bottom: 20px;
+				box-shadow: 0 20px 50px 0 rgb(150 163 190 / 7%);
+			}
+
+			th {
+				text-align: left;
+				color: $main-txt-color;
+				border: none;
+				padding: 29px 5px 10.5px 5px;
+				@include border-radius(10px);
+				background-color: $main-bg-color;
+				font-size: 20px;
+				font-weight: normal;
+				color: $heading2-txt-color;
+
+				&:first-child {
+					padding-left: 40px;
+				}
+			}
+
+			td {
+				font-size: 22px;
+				font-weight: 500;
+				color: $heading3-txt-color;
+				border-top: solid 1px $border-thin;
+				border-bottom: solid 1px $border-thin;
+				padding: 25px 5px;
+				align-items: center;
+				display: flex;
+
+				&:first-child {
+					border-left: solid 1px $border-thin;
+					@include border-radius(10px 0 0 10px);
+					box-shadow: 0 20px 50px 0 rgba(150, 163, 190, 0.07);
+					padding-left: 40px;
+				}
+
+				&:last-child {
+					border-right: solid 1px $border-thin;
+					@include border-radius(0 10px 10px 0);
+					box-shadow: 0 20px 50px 0 rgba(150, 163, 190, 0.07);
+				}
+
+				.completed-btn {
+					padding: 8px 22.9px 8px 23.1px;
+					@include border-radius(16px);
+					background-color: $notification-bg;
+					border: none;
+					font-size: 16px;
+					font-weight: 500;
+					color: $btn-bg-active;
+				}
+
+				.ongoing-btn {
+					padding: 8px 22.9px 8px 23.1px;
+					@include border-radius(16px);
+
+					background-color: #f7f3e5;
+					border: none;
+					font-size: 16px;
+					font-weight: 500;
+					color: #efb023;
+				}
+
+				.edit-btn {
+					width: 32px;
+					height: 32px;
+					background-color: $notification-bg;
+					border: none;
+					@include border-radius(50px);
+
+					margin-left: 48px;
+					cursor: pointer;
+
+					i {
+						&.fa {
+							color: $btn-bg-active;
+							;
+						}
+					}
+				}
+			}
+
+			th,
+			td {
+				&.col-20 {
+					width: 20%;
+				}
+
+				&.col-10 {
+					width: 10%;
+				}
+
+				&.col-15 {
+					width: 15%;
+				}
+			}
+		}
+
+		.pagination {
+			padding-top: 55px;
+
+			ul {
+				display: flex;
+				justify-content: center;
+
+				li {
+					margin: 0px 5px;
+
+					button {
+						width: 33px;
+						height: 33px;
+						@include border-radius(6px);
+
+						border: solid 2px #d0d0d0;
+						background-color: #fff;
+						font-size: 16px;
+						font-weight: 600;
+
+						color: #7cb150;
+
+						&.active {
+							background-color: #7cb150;
+							color: #fff;
+
+						}
+					}
+				}
+			}
+		}
+	}
+}

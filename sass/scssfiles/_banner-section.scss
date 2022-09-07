@@ -23,17 +23,18 @@
 			}
 		}
 	}
-	.right-content {
-		background: $notification-bg;
-		position: absolute;
-		top: 50px;
-		right: 0;
-		border-radius: 10px;
-		.inner-content {
+
+		
+		.right-content {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			padding: 0px 40px 0px 20px;
+			background: $notification-bg;
+		position: absolute;
+		top: 50px;
+		right: 0;
+		@include border-radius( 10px);
 			button.feature-img {
 				background: transparent;
 				border: none;
@@ -64,9 +65,15 @@
 				height: 36px;
 				background: $alert-icon;
 				border: none;
-				border-radius: 50%;
+				@include border-radius( 50px);
 				position: relative;
+				img{
+					position: absolute;
+					top: 5px;
+					left: 5px;
+					width: 25.9px;
+				}
 			}
 		}
-	}
+	
 }
