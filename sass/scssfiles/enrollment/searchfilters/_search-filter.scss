@@ -106,11 +106,14 @@
 			.list {
 				padding: 17.5px 20px 16.5px;
 				@include border-radius(0px 5px 5px 0px);
-				background-color: $alert-icon;
+				// background-color: $alert-icon;
 				border: solid 1px $border-2-bold;
 				padding: 15px 20px 15px 20px;
 				cursor: pointer;
 				border-left: 0;
+				&.active{
+					background-color: #7cb150;
+				}
 
 				img {
 					width: 20.7px;

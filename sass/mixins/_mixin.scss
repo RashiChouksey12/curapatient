@@ -1,9 +1,9 @@
-@mixin flex-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+// @mixin flex-box {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//   }
   @mixin border-radius($pixel) {
             border-radius: $pixel;
          -o-border-radius: $pixel;
