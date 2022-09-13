@@ -103,6 +103,7 @@
 }
 
 .organization .bottom-content {
+  margin-bottom: 28px;
   display: flex;
   align-items: center;
   padding: 20px 20px 20px 21.2px;
@@ -283,9 +284,6 @@
   border-width: 2.5px 0px 0px 2.5px;
 }
 
-.enrollment {
-  margin-top: 25px;
-}
 .enrollment .enrollment-content {
   padding: 28px 32px;
   border-radius: 10px;
@@ -777,7 +775,7 @@ header .account-section .notification.profile img {
   margin-right: 16px;
 }
 .Members .Members-content .members-buttons .right-section .left-btns .left-btn a {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -796,7 +794,7 @@ header .account-section .notification.profile img {
   border-left: 0;
 }
 .Members .Members-content .members-buttons .right-section .left-btns .right-btn a {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
