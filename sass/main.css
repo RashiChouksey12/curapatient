@@ -24,11 +24,11 @@
 }
 .banner-section {
   position: relative;
-  padding-top: 37px;
 }
 .banner-section .left-contet {
   display: flex;
   align-items: center;
+  padding-top: 37px;
 }
 .banner-section .left-contet .family-img {
   width: 250px;
@@ -37,13 +37,17 @@
 .banner-section .left-contet .welcome-content h1 {
   font-size: 52px;
   font-weight: 600;
-  padding: 10px 0 0 0;
 }
 .banner-section .left-contet .welcome-content p {
   font-size: 22px;
   font-weight: 500;
-  line-height: 28px;
-  padding-top: 10px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #101817;
+  padding: 10px 0 0 0;
 }
 .banner-section .right-content {
   display: flex;
@@ -52,7 +56,7 @@
   padding: 0px 40px 0px 20px;
   background: #e6f3ee;
   position: absolute;
-  top: 50px;
+  top: 61px;
   right: 0;
   border-radius: 10px;
   -o-border-radius: 10px;
@@ -66,7 +70,7 @@
   cursor: pointer;
 }
 .banner-section .right-content button.feature-img.feature-img {
-  width: 48px;
+  width: 38px;
 }
 .banner-section .right-content .Vaccinations-content p {
   font-size: 22px;
@@ -94,6 +98,7 @@
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   position: relative;
+  cursor: pointer;
 }
 .banner-section .right-content .ellipse img {
   position: absolute;
@@ -103,7 +108,7 @@
 }
 
 .organization .bottom-content {
-  margin: 22px 0 28px 0;
+  margin-bottom: 28px;
   display: flex;
   align-items: center;
   padding: 20px 20px 20px 21.2px;
@@ -158,14 +163,14 @@
   margin-left: 32px;
 }
 .organization .bottom-content .District .para-1 {
-  padding-top: 6px;
+  padding-top: 6.9px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.38;
   color: #4c4c4c;
 }
 .organization .bottom-content .District .para-2 {
-  padding-top: 14px;
+  padding-top: 14.2px;
   font-size: 16px;
   font-weight: 500;
   line-height: 25px;
@@ -188,6 +193,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+}
+.organization .bottom-content .right-content .dropdown-container:hover {
+  background-color: #e6f3ee;
+}
+.organization .bottom-content .right-content .dropdown-container:hover::after {
+  border-width: 2.5px 0px 0px 2.5px;
 }
 .organization .bottom-content .right-content .dropdown-container:not(:last-child) {
   margin-right: 26px;
@@ -202,7 +214,6 @@
   border-color: #4c4c4c;
   border-width: 0px 2.5px 2.5px 0px;
   transform: rotate(45deg);
-  transition: border-width 150ms ease-in-out;
   position: absolute;
   right: 20px;
   top: 0;
@@ -293,6 +304,7 @@
   -webkit-border-radius: 10px;
   border: solid 2px #e6e6e6;
   background-color: #fff;
+  margin-bottom: 30px;
 }
 .enrollment .enrollment-content .selectdiv {
   position: relative;
@@ -317,6 +329,7 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  font-family: "author";
   display: block;
   float: right;
   line-height: 1.75;
@@ -402,7 +415,7 @@
   box-shadow: 0 20px 50px 0 rgba(150, 163, 190, 0.07);
 }
 .enrollment .enrollment-content .enrollment-tbl td .completed-btn {
-  padding: 8px 22.9px 8px 23.1px;
+  padding: 8px 23px;
   border-radius: 16px;
   -o-border-radius: 16px;
   -ms-border-radius: 16px;
@@ -413,19 +426,23 @@
   font-size: 16px;
   font-weight: 500;
   color: #28a03b;
+  cursor: pointer;
+  font-family: "author";
 }
 .enrollment .enrollment-content .enrollment-tbl td .ongoing-btn {
-  padding: 8px 22.9px 8px 23.1px;
+  padding: 8px 23px;
   border-radius: 16px;
   -o-border-radius: 16px;
   -ms-border-radius: 16px;
   -moz-border-radius: 16px;
   -webkit-border-radius: 16px;
+  font-family: "author";
   background-color: #f7f3e5;
   border: none;
   font-size: 16px;
   font-weight: 500;
   color: #efb023;
+  cursor: pointer;
 }
 .enrollment .enrollment-content .enrollment-tbl td .edit-btn {
   width: 32px;
@@ -473,16 +490,23 @@
   -ms-border-radius: 6px;
   -moz-border-radius: 6px;
   -webkit-border-radius: 6px;
-  border: solid 2px #d0d0d0;
+  border: solid 1px #d0d0d0;
   background-color: #fff;
   font-size: 16px;
   font-weight: 600;
   font-weight: normal;
   color: #7cb150;
+  cursor: pointer;
+}
+.enrollment .enrollment-content .pagination ul li button:hover {
+  background-color: #7cb150;
+  color: #fff;
+  border: none;
 }
 .enrollment .enrollment-content .pagination ul li button.active {
   background-color: #7cb150;
   color: #fff;
+  border: none;
 }
 
 .top-head {
@@ -509,7 +533,8 @@
   display: flex;
 }
 .top-head .enrollment-status .enrollment-status-btns .status-btn {
-  padding: 18px 17.5px 18px 17.5px;
+  font-family: "author";
+  padding: 18.5px 22px;
   background-color: #fff;
   border: solid 1px #e3e3e3;
   font-weight: normal;
@@ -522,6 +547,11 @@
   cursor: pointer;
   border-left: 0;
   font-size: 16px;
+}
+.top-head .enrollment-status .enrollment-status-btns .status-btn:hover {
+  background-color: #7cb150;
+  color: #fff;
+  font-weight: 500;
 }
 .top-head .enrollment-status .enrollment-status-btns .status-btn.active {
   background-color: #7cb150;
@@ -543,12 +573,12 @@
   -webkit-border-radius: 0px 10px 10px 0px;
 }
 .top-head .enrollment-status form.example input[type=text] {
+  font-family: "author";
   font-size: 20px;
   font-weight: normal;
   float: left;
   width: 500px;
   background: #f1f1f1;
-  padding: 16px 15.4px 18px 17px;
   border-radius: 5px 0px 0px 5px;
   -o-border-radius: 5px 0px 0px 5px;
   -ms-border-radius: 5px 0px 0px 5px;
@@ -556,9 +586,11 @@
   -webkit-border-radius: 5px 0px 0px 5px;
   border: solid 1px #e2e2e2;
   background-color: #fff;
-  padding: 16.5px 15.4px 16.5px 17px;
+  padding: 17px 15.4px 17px 17px;
+  cursor: pointer;
 }
 .top-head .enrollment-status form.example button {
+  cursor: pointer;
   float: left;
   padding: 10px;
   background: #7cb150;
@@ -566,7 +598,7 @@
   font-size: 17px;
   border-left: none;
   cursor: pointer;
-  padding: 17px 22px 19px 17px;
+  padding: 18px 22px;
   border-radius: 0px 5px 5px 0px;
   -o-border-radius: 0px 5px 5px 0px;
   -ms-border-radius: 0px 5px 5px 0px;
@@ -586,7 +618,6 @@
   margin-right: 14px;
 }
 .top-head .enrollment-status .list-main .map {
-  padding: 17.5px 20px 16.5px;
   border-radius: 5px 0px 0px 5px;
   -o-border-radius: 5px 0px 0px 5px;
   -ms-border-radius: 5px 0px 0px 5px;
@@ -594,14 +625,16 @@
   -webkit-border-radius: 5px 0px 0px 5px;
   border: solid 1px #e2e2e2;
   background-color: #fff;
-  padding: 15px 20px 15px 20px;
+  padding: 16px 20px;
   cursor: pointer;
+}
+.top-head .enrollment-status .list-main .map:hover {
+  background-color: #7cb150;
 }
 .top-head .enrollment-status .list-main .map img {
   width: 15.8px;
 }
 .top-head .enrollment-status .list-main .list {
-  padding: 17.5px 20px 16.5px;
   border-radius: 0px 5px 5px 0px;
   -o-border-radius: 0px 5px 5px 0px;
   -ms-border-radius: 0px 5px 5px 0px;
@@ -619,7 +652,6 @@
   width: 20.7px;
 }
 .top-head .enrollment-status .filter {
-  padding: 16.5px 15.5px 16.9px 15.5px;
   border-radius: 5px;
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -682,6 +714,14 @@ header .navigation .nav ul li a {
   color: #000;
   display: inline-flex;
   padding: 17px 29px 17px 24px;
+}
+header .navigation .nav ul li a:hover {
+  background-color: rgba(129, 193, 75, 0.23);
+  border-radius: 7px;
+  -o-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
 }
 header .navigation .nav ul li a.active {
   background-color: rgba(129, 193, 75, 0.23);
@@ -748,12 +788,15 @@ header .account-section .notification.profile img {
   border-radius: 10px;
   border: solid 1px #e6e6e6;
   background-color: #fff;
+  margin-top: 37px;
+  margin-bottom: 50px;
 }
 .Members .Members-content .members-buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 17px 30px 28px 32px;
+  cursor: pointer;
 }
 .Members .Members-content .members-buttons h1 {
   font-size: 30px;
@@ -770,14 +813,16 @@ header .account-section .notification.profile img {
   align-items: center;
 }
 .Members .Members-content .members-buttons .right-section .left-btns .left-btn {
-  padding: 16px 32px 16px 32px;
+  padding: 17px 37px 17px 36px;
   border-radius: 5px;
   border: solid 1px #87b05d;
   background-color: #fff;
   margin-right: 16px;
+  cursor: pointer;
 }
 .Members .Members-content .members-buttons .right-section .left-btns .left-btn a {
-  font-size: 16px;
+  font-family: "author";
+  font-size: 18px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -790,14 +835,23 @@ header .account-section .notification.profile img {
   display: flex;
 }
 .Members .Members-content .members-buttons .right-section .left-btns .right-btn {
-  padding: 16px 12px 16px 12px;
+  padding: 18px 14px 17px 15px;
   border: solid 1px #e3e3e3;
   background-color: #fff;
   border-left: 0;
+  cursor: pointer;
+}
+.Members .Members-content .members-buttons .right-section .left-btns .right-btn:hover {
+  background-color: #7cb150;
+}
+.Members .Members-content .members-buttons .right-section .left-btns .right-btn:hover a {
+  color: #fff;
+  font-weight: 500;
 }
 .Members .Members-content .members-buttons .right-section .left-btns .right-btn a {
-  font-size: 16px;
-  font-weight: 500;
+  font-family: "author";
+  font-size: 18px;
+  font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -816,6 +870,7 @@ header .account-section .notification.profile img {
 }
 .Members .Members-content .members-buttons .right-section .left-btns .right-btn.active a {
   color: #fff;
+  font-weight: 500;
 }
 .Members .Members-content .top-head {
   padding-top: 32px;
@@ -837,6 +892,9 @@ header .account-section .notification.profile img {
   justify-content: space-between;
   padding-top: 43px;
   padding: 0px 30px 30px 32px;
+}
+.Members .Members-content .cards.bottom-cards {
+  padding-bottom: 95px;
 }
 .Members .Members-content .cards .card {
   padding: 20px 27px 25px;
@@ -867,6 +925,7 @@ header .account-section .notification.profile img {
   text-align: left;
   color: #649b37;
   margin-bottom: 18px;
+  cursor: pointer;
 }
 .Members .Members-content .cards .card .card-heading h3 {
   font-size: 22px;
@@ -877,6 +936,10 @@ header .account-section .notification.profile img {
   letter-spacing: normal;
   text-align: left;
   color: #0e1817;
+}
+.Members .Members-content .cards .card .vaccination-content {
+  height: auto;
+  min-height: 44%;
 }
 .Members .Members-content .cards .card .vaccination-content .Vaccination .vaccination-details {
   display: flex;
@@ -908,6 +971,7 @@ header .account-section .notification.profile img {
   background-color: #fff;
   width: 100%;
   margin-top: 27px;
+  cursor: pointer;
 }
 .Members .Members-content .cards .card .See-Details a {
   font-size: 16px;
@@ -918,6 +982,9 @@ header .account-section .notification.profile img {
   letter-spacing: normal;
   text-align: center;
   color: #101817;
+}
+.Members .Members-content .cards .card .See-Details a:hover {
+  font-weight: 700;
 }
 
 * {

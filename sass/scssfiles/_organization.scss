@@ -1,7 +1,7 @@
 .organization {
 
 	.bottom-content {
-		margin: 22px 0 28px 0;
+		margin-bottom: 28px;
 		display: flex;
 		align-items: center;
 		padding: 20px 20px 20px 21.2px;
@@ -52,7 +52,7 @@
 			}
 
 			.para-1 {
-				padding-top: 6px;
+				padding-top: 6.9px;
 				font-size: 16px;
 				font-weight: 500;
 				line-height: 1.38;
@@ -60,7 +60,7 @@
 			}
 
 			.para-2 {
-				padding-top: 14px;
+				padding-top: 14.2px;
 				font-size: 16px;
 				font-weight: 500;
 				line-height: 25px;
@@ -81,6 +81,14 @@
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
+				cursor: pointer;
+				&:hover{
+					background-color: $notification-bg;
+					&::after {
+						border-width: 2.5px 0px 0px 2.5px;
+					}
+				}
+				
 
 				&:not(:last-child) {
 					margin-right: 26px;
@@ -96,7 +104,7 @@
 					border-color: $heading2-txt-color;
 					border-width: 0px 2.5px 2.5px 0px;
 					transform: rotate(45deg);
-					transition: border-width 150ms ease-in-out;
+					// transition: border-width 150ms ease-in-out;
 					position: absolute;
 					right: 20px;
 					top: 0;

@@ -29,6 +29,10 @@ header {
 						color: $main-txt-color ;
 						display: inline-flex;
 						padding: 17px 29px 17px 24px;
+                          &:hover{
+							background-color: $active-element-color;
+							@include border-radius(7px);
+						  }
 
 						&.active {
 							background-color: $active-element-color;

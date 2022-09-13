@@ -6,6 +6,7 @@
 		@include border-radius(10px);
 		border: solid 2px $border-thin;
 		background-color: $main-bg-color;
+		margin-bottom: 30px;
 
 		.selectdiv {
 			position: relative;
@@ -34,6 +35,7 @@
 			-moz-appearance: none;
 			appearance: none;
 
+			font-family: 'author';
 			display: block;
 			float: right;
 			line-height: 1.75;
@@ -113,24 +115,27 @@
 				}
 
 				.completed-btn {
-					padding: 8px 22.9px 8px 23.1px;
+					padding: 8px 23px;
 					@include border-radius(16px);
 					background-color: $notification-bg;
 					border: none;
 					font-size: 16px;
 					font-weight: 500;
 					color: $btn-bg-active;
+					cursor: pointer;
+					font-family: 'author';
 				}
 
 				.ongoing-btn {
-					padding: 8px 22.9px 8px 23.1px;
+					padding: 8px 23px;
 					@include border-radius(16px);
-
+					font-family: 'author';
 					background-color: #f7f3e5;
 					border: none;
 					font-size: 16px;
 					font-weight: 500;
 					color: #efb023;
+					cursor: pointer;
 				}
 
 				.edit-btn {
@@ -181,17 +186,23 @@
 						width: 33px;
 						height: 33px;
 						@include border-radius(6px);
-
-						border: solid 2px #d0d0d0;
+						border: solid 1px #d0d0d0;
 						background-color: #fff;
 						font-size: 16px;
 						font-weight: 600;
 						font-weight: normal;
 						color: #7cb150;
+						cursor: pointer;
+						&:hover{
+							background-color: #7cb150;
+							color: #fff;
+							border: none;
+						}
 
 						&.active {
 							background-color: #7cb150;
 							color: #fff;
+							border: none;
 
 						}
 					}

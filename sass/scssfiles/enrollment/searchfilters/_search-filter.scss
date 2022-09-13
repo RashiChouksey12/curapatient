@@ -23,7 +23,8 @@
 			display: flex;
 
 			.status-btn {
-			    padding: 18px 17.5px 18px 17.5px;
+			    font-family: 'author';
+				padding: 18.5px 22px;
 				background-color: $main-bg-color;
 				border: solid 1px $border-bold;
 				font-weight: normal;
@@ -36,6 +37,11 @@
 				cursor: pointer;
 				border-left: 0;
 				font-size: 16px;
+				&:hover{
+					background-color: $alert-icon;
+					color: $main-bg-color;
+					font-weight: 500;
+				}
 
 				&.active {
 					background-color: $alert-icon;
@@ -54,19 +60,22 @@
 		}
 
 		form.example input[type=text] {
+			font-family: 'author';
 			font-size: 20px;
 			font-weight: normal;
 			float: left;
 			width: 500px;
 			background: $main-bg-2-color;
-			padding: 16px 15.4px 18px 17px;
 			@include border-radius(5px 0px 0px 5px);
 			border: solid 1px $border-2-bold;
 			background-color: $main-bg-color;
-			padding: 16.5px 15.4px 16.5px 17px;
+			padding: 17px 15.4px 17px 17px;
+			// padding: 17px 22px 18px 17px;
+			cursor: pointer;
 		}
 
 		form.example button {
+			cursor: pointer;
 			float: left;
 			padding: 10px;
 			background: $alert-icon;
@@ -74,7 +83,7 @@
 			font-size: 17px;
 			border-left: none;
 			cursor: pointer;
-			padding: 17px 22px 19px 17px;
+			padding: 18px 22px;
 			@include border-radius(0px 5px 5px 0px);
 			border: none;
 			margin-right: 15px;
@@ -92,20 +101,20 @@
 			margin-right: 14px;
 
 			.map {
-				padding: 17.5px 20px 16.5px;
 				@include border-radius(5px 0px 0px 5px);
 				border: solid 1px $border-2-bold;
 				background-color: $main-bg-color;
-				padding: 15px 20px 15px 20px;
+				padding: 16px 20px ;
 				cursor: pointer;
-
+				&:hover{
+					background-color: #7cb150;
+				}
 				img {
 					width: 15.8px;
 				}
 			}
 
 			.list {
-				padding: 17.5px 20px 16.5px;
 				@include border-radius(0px 5px 5px 0px);
 				// background-color: $alert-icon;
 				border: solid 1px $border-2-bold;
@@ -123,7 +132,6 @@
 		}
 
 		.filter {
-			padding: 16.5px 15.5px 16.9px 15.5px;
 			@include border-radius(5px);
 			border: solid 1px $border-2-bold;
 			background-color: $main-bg-color;
