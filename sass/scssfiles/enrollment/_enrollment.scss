@@ -35,10 +35,7 @@
 			appearance: none;
 
 			display: block;
-
 			float: right;
-
-			font-size: 16px;
 			line-height: 1.75;
 			color: #333;
 			background-color: #ffffff;
@@ -46,14 +43,15 @@
 
 			-ms-word-break: normal;
 			word-break: normal;
-			padding: 16px 30px 18px 17px;
+			padding: 12px 30px 12px 17px;
 			@include border-radius(5px);
 			border: solid 1px $border-2-bold;
 			background-color: $main-bg-color;
 			margin-left: 16px;
-			font-size: 17px;
+			font-size: 20px;
 			color: $heading2-txt-color;
 			max-width: 300px;
+			font-weight: normal;
 
 		}
 
@@ -188,7 +186,7 @@
 						background-color: #fff;
 						font-size: 16px;
 						font-weight: 600;
-
+						font-weight: normal;
 						color: #7cb150;
 
 						&.active {

@@ -103,7 +103,7 @@
 }
 
 .organization .bottom-content {
-  margin-bottom: 28px;
+  margin: 22px 0 28px 0;
   display: flex;
   align-items: center;
   padding: 20px 20px 20px 21.2px;
@@ -319,14 +319,13 @@
   appearance: none;
   display: block;
   float: right;
-  font-size: 16px;
   line-height: 1.75;
   color: #333;
   background-color: #ffffff;
   background-image: none;
   -ms-word-break: normal;
   word-break: normal;
-  padding: 16px 30px 18px 17px;
+  padding: 12px 30px 12px 17px;
   border-radius: 5px;
   -o-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -335,9 +334,10 @@
   border: solid 1px #e2e2e2;
   background-color: #fff;
   margin-left: 16px;
-  font-size: 17px;
+  font-size: 20px;
   color: #4c4c4c;
   max-width: 300px;
+  font-weight: normal;
 }
 .enrollment .enrollment-content .test-option {
   width: 300px;
@@ -477,6 +477,7 @@
   background-color: #fff;
   font-size: 16px;
   font-weight: 600;
+  font-weight: normal;
   color: #7cb150;
 }
 .enrollment .enrollment-content .pagination ul li button.active {
@@ -508,7 +509,7 @@
   display: flex;
 }
 .top-head .enrollment-status .enrollment-status-btns .status-btn {
-  padding: 20.5px 24px 18.5px 21px;
+  padding: 18px 17.5px 18px 17.5px;
   background-color: #fff;
   border: solid 1px #e3e3e3;
   font-weight: normal;
@@ -542,7 +543,8 @@
   -webkit-border-radius: 0px 10px 10px 0px;
 }
 .top-head .enrollment-status form.example input[type=text] {
-  font-size: 17px;
+  font-size: 20px;
+  font-weight: normal;
   float: left;
   width: 500px;
   background: #f1f1f1;
@@ -775,7 +777,7 @@ header .account-section .notification.profile img {
   margin-right: 16px;
 }
 .Members .Members-content .members-buttons .right-section .left-btns .left-btn a {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -794,8 +796,8 @@ header .account-section .notification.profile img {
   border-left: 0;
 }
 .Members .Members-content .members-buttons .right-section .left-btns .right-btn a {
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 16px;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
