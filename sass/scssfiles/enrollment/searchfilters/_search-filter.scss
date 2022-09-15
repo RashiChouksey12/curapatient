@@ -52,16 +52,15 @@
 					font-weight: 500;
 					
 				}
-
 				&:first-child {
-					@include border-radius(10px 0 0px 10px);
+					@include border-radius(5px 0 0px 5px);
 					width: 61px;
 					border-left: solid 1px #e3e3e3;
 					
 				}
 
 				&:last-child {
-					@include border-radius(0px 10px 10px 0px);
+					@include border-radius(0px 5px 5px 0px);
 				}
 			}
 		}
@@ -102,7 +101,6 @@
 			clear: both;
 			display: table;
 		}
-
 		.list-main {
 			display: flex;
 			margin-right: 14px;
@@ -120,7 +118,6 @@
 					width: 15.8px;
 				}
 			}
-
 			.list {
 				@include border-radius(0px 5px 5px 0px);
 				// background-color: $alert-icon;
@@ -132,20 +129,17 @@
 				&.active{
 					background-color: #7cb150;
 				}
-
 				img {
 					width: 20.7px;
 				}
 			}
 		}
-
 		.filter {
 			@include border-radius(5px);
 			border: solid 1px $border-2-bold;
 			background-color: $main-bg-color;
 			padding: 14px 15px 14px 15px;
 			cursor: pointer;
-
 			img {
 				width: 24px;
 			}

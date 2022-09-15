@@ -108,7 +108,6 @@
 }
 
 .organization .bottom-content {
-  margin-bottom: 28px;
   display: flex;
   align-items: center;
   padding: 20px 20px 20px 21.2px;
@@ -305,6 +304,7 @@
   border: solid 2px #e6e6e6;
   background-color: #fff;
   margin-bottom: 30px;
+  margin-top: 28px;
 }
 .enrollment .enrollment-content .enrollment-tbl {
   border-collapse: collapse;
@@ -406,7 +406,7 @@
   cursor: pointer;
 }
 .enrollment .enrollment-content .enrollment-tbl td .edit-btn i.fa {
-  color: #28a03b;
+  color: #7cb150;
 }
 .enrollment .enrollment-content .enrollment-tbl th.col-20,
 .enrollment .enrollment-content .enrollment-tbl td.col-20 {
@@ -509,20 +509,20 @@
   font-weight: 500;
 }
 .top-head .enrollment-status .enrollment-status-btns .status-btn:first-child {
-  border-radius: 10px 0 0px 10px;
-  -o-border-radius: 10px 0 0px 10px;
-  -ms-border-radius: 10px 0 0px 10px;
-  -moz-border-radius: 10px 0 0px 10px;
-  -webkit-border-radius: 10px 0 0px 10px;
+  border-radius: 5px 0 0px 5px;
+  -o-border-radius: 5px 0 0px 5px;
+  -ms-border-radius: 5px 0 0px 5px;
+  -moz-border-radius: 5px 0 0px 5px;
+  -webkit-border-radius: 5px 0 0px 5px;
   width: 61px;
   border-left: solid 1px #e3e3e3;
 }
 .top-head .enrollment-status .enrollment-status-btns .status-btn:last-child {
-  border-radius: 0px 10px 10px 0px;
-  -o-border-radius: 0px 10px 10px 0px;
-  -ms-border-radius: 0px 10px 10px 0px;
-  -moz-border-radius: 0px 10px 10px 0px;
-  -webkit-border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 5px 5px 0px;
+  -o-border-radius: 0px 5px 5px 0px;
+  -ms-border-radius: 0px 5px 5px 0px;
+  -moz-border-radius: 0px 5px 5px 0px;
+  -webkit-border-radius: 0px 5px 5px 0px;
 }
 .top-head .enrollment-status form.example input[type=text] {
   font-family: "author";
@@ -984,6 +984,10 @@ header .account-section .notification.profile img {
   font-weight: 700;
 }
 
+.bottom-content {
+  margin-top: 28px;
+}
+
 .event .event-content {
   border-radius: 10px;
   border: solid 2px #e6e6e6;
@@ -1007,6 +1011,12 @@ header .account-section .notification.profile img {
   text-align: left;
   color: #4c4c4c;
   padding-top: 10px;
+}
+.event .event-content form.example button {
+  margin-right: 16.3px;
+}
+.event .event-content .list-main {
+  margin-right: 15px;
 }
 .event .event-content .map {
   border-right: 0;
@@ -1079,7 +1089,7 @@ header .account-section .notification.profile img {
   background: rgb(199, 196, 196);
 }
 .event .event-content .cardHeader .Fitter-card .card {
-  padding: 21px 24px 25px;
+  padding: 22px 15px 25px 24px;
   border-radius: 10px;
   box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.06);
   border: solid 1px #e2e2e4;
@@ -1111,6 +1121,7 @@ header .account-section .notification.profile img {
   border: none;
   margin: 0 0px 0 10px;
   padding: 0;
+  cursor: pointer;
 }
 .event .event-content .cardHeader .Fitter-card .card .card-heading .left .blue-calender img {
   width: 21.9px;
@@ -1177,7 +1188,7 @@ header .account-section .notification.profile img {
   cursor: pointer;
 }
 .event .event-content .cardHeader .Fitter-card .card .card-heading .edit-btn i.fa {
-  color: #28a03b;
+  color: #7cb150;
 }
 .event .event-content .cardHeader .Fitter-card .card .vaccination-content {
   height: auto;
@@ -1188,12 +1199,12 @@ header .account-section .notification.profile img {
 }
 .event .event-content .cardHeader .Fitter-card .card .vaccination-content .Vaccination .inner-details {
   display: flex;
-  padding-top: 30px;
+  padding: 31px 0 4px 0;
   align-items: center;
   width: 50%;
 }
 .event .event-content .cardHeader .Fitter-card .card .vaccination-content .Vaccination .inner-details.right {
-  margin-left: 50px;
+  margin-left: 17%;
 }
 .event .event-content .cardHeader .Fitter-card .card .vaccination-content .Vaccination .inner-details img {
   width: auto;
