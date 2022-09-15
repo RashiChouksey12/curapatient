@@ -1,7 +1,7 @@
 .Members {
 	padding-top: 40px;
+
 	.Members-content {
-		
 		border-radius: 10px;
 		border: solid 1px #e6e6e6;
 		background-color: #fff;
@@ -10,13 +10,12 @@
 
 
 		.members-buttons {
-
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
 			padding: 17px 30px 28px 32px;
 			cursor: pointer;
-			
+
 
 			h1 {
 				font-size: 30px;
@@ -57,27 +56,28 @@
 					}
 
 					.right-btns {
-
 						display: flex;
 					}
 
 
 					.right-btn {
-
-					    padding: 18px 14px 17px 15px;
+						padding: 18px 0px 18px 0px;
 						border: solid 1px #e3e3e3;
 						background-color: #fff;
 						border-left: 0;
 						cursor: pointer;
-						&:hover{
+						width: 121px;
+
+						&:hover {
 							background-color: #7cb150;
-							a{
+
+							a {
 								color: #fff;
-									font-weight: 500;
+								font-weight: 500;
 							}
 
 						}
-					
+
 
 						a {
 							font-family: 'author';
@@ -89,12 +89,10 @@
 							letter-spacing: normal;
 							text-align: center;
 							color: #4c4c4c;
-							
 						}
 
 						&:first-child {
 							border-radius: 5px 0px 0px 5px;
-
 						}
 
 						&:last-child {
@@ -102,9 +100,7 @@
 						}
 
 						&.active {
-
 							background-color: #7cb150;
-							
 
 							a {
 								color: #fff;
@@ -134,7 +130,6 @@
 				text-align: left;
 				color: #0e1817;
 			}
-
 		}
 
 		.cards {
@@ -142,10 +137,7 @@
 			justify-content: space-between;
 			padding-top: 43px;
 			padding: 0px 30px 30px 32px;
-			&.bottom-cards{
-				padding-bottom: 95px;
-			}
-
+			flex-wrap: wrap;
 			.card {
 				padding: 20px 27px 25px;
 				border-radius: 10px;
@@ -153,14 +145,8 @@
 				border: solid 1px #e2e2e4;
 				background-color: #fff;
 				margin: 0px 18px;
-				width: 25%;
-				&:first-child{
-					margin-left: 0;
-				}
-				&:last-child{
-					margin-right: 0;
-				}
-
+				width: 24%;
+				margin: 0px 0 33px 0;
 				.card-button {
 					padding: 9px 40px 9px 36px;
 					border-radius: 15px;
@@ -176,6 +162,7 @@
 					color: #649b37;
 					margin-bottom: 18px;
 					cursor: pointer;
+					font-family: 'author';
 
 
 				}
@@ -192,23 +179,25 @@
 						color: #0e1817;
 					}
 				}
+
 				.vaccination-content {
 					height: auto;
 					min-height: 44%;
+
 					.Vaccination {
-						.vaccination-details{
+						.vaccination-details {
 							display: flex;
 							justify-content: space-between;
 						}
 
-						.inner-details{
+						.inner-details {
 							display: flex;
 							padding-top: 15px;
 
 							img {
 								width: auto;
 								height: 15px;
-							
+
 								margin: 0 11px 0 0;
 							}
 
@@ -248,7 +237,8 @@
 						letter-spacing: normal;
 						text-align: center;
 						color: #101817;
-						&:hover{
+
+						&:hover {
 							font-weight: 700;
 						}
 					}

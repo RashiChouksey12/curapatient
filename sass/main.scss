@@ -1,13 +1,14 @@
 @import './variables/var';
 @import './mixins/mixin';
 @import './fontFamily/font';
-@import './scssfiles/banner-section';
-@import './scssfiles/organization';
+@import './scssfiles/banner/banner-section';
+@import './scssfiles/organization/organization';
 @import './scssfiles/enrollment/enrollment';
 @import './scssfiles/enrollment/searchfilters/search-filter';
 @import './scssfiles/enrollment/org-header/org-header';
-@import './scssfiles/header';
-@import './scssfiles/members';
+@import './scssfiles/nav/header';
+@import './scssfiles/member/members';
+@import './scssfiles/event/event';
 
 
 // variable
@@ -30,6 +31,7 @@ p,
 h3,
 h5 {
 	margin: 0;
+	padding: 0;
 }
 
 .arrow {
@@ -64,4 +66,6 @@ a {
 .logo {
 	width: 192px;
 }
+
+// event
 
